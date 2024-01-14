@@ -39,6 +39,12 @@
           "Main": true,
           "Showing": true,
           "Pinned": false
+        },
+        {
+          "RelativePath": "local.process",
+          "Main": false,
+          "Showing": true,
+          "Pinned": false
         }
       ],
       "Links": []
