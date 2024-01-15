@@ -183,7 +183,7 @@
     </DesignerItem>
     <DesignerItem>
       <Left>480</Left>
-      <Top>620</Top>
+      <Top>665</Top>
       <Width>200</Width>
       <Height>75</Height>
       <ID>9823804d-d906-477a-bcd6-c17f5a683e07</ID>
@@ -303,8 +303,8 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>15</zIndex>
+      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
+      <zIndex>23</zIndex>
     </Connection>
   </Connections>
   <Properties />
