@@ -35,8 +35,14 @@
           "Pinned": false
         },
         {
-          "RelativePath": "main.process",
+          "RelativePath": "local.process",
           "Main": true,
+          "Showing": true,
+          "Pinned": false
+        },
+        {
+          "RelativePath": "main.process",
+          "Main": false,
           "Showing": true,
           "Pinned": false
         }

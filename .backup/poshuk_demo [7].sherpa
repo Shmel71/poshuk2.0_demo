@@ -30,7 +30,7 @@
       "Files": [
         {
           "RelativePath": "diadok.process",
-          "Main": false,
+          "Main": true,
           "Showing": true,
           "Pinned": false
         },
@@ -42,7 +42,7 @@
         },
         {
           "RelativePath": "main.process",
-          "Main": true,
+          "Main": false,
           "Showing": true,
           "Pinned": false
         }

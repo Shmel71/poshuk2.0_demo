@@ -45,6 +45,12 @@
           "Main": true,
           "Showing": true,
           "Pinned": false
+        },
+        {
+          "RelativePath": "1C.process",
+          "Main": false,
+          "Showing": true,
+          "Pinned": false
         }
       ],
       "Links": []

@@ -29,14 +29,20 @@
       "Folders": [],
       "Files": [
         {
-          "RelativePath": "main.process",
-          "Main": true,
+          "RelativePath": "diadok.process",
+          "Main": false,
           "Showing": true,
           "Pinned": false
         },
         {
-          "RelativePath": "diadok.process",
+          "RelativePath": "local.process",
           "Main": false,
+          "Showing": true,
+          "Pinned": false
+        },
+        {
+          "RelativePath": "main.process",
+          "Main": true,
           "Showing": true,
           "Pinned": false
         }

@@ -36,13 +36,13 @@
         },
         {
           "RelativePath": "local.process",
-          "Main": true,
+          "Main": false,
           "Showing": true,
           "Pinned": false
         },
         {
           "RelativePath": "main.process",
-          "Main": false,
+          "Main": true,
           "Showing": true,
           "Pinned": false
         }
