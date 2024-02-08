@@ -37,14 +37,14 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>94bae139-ea7e-414b-8851-297a5bed3224</ID>
-      <zIndex>16</zIndex>
+      <zIndex>20</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
       <IsPSVerified>true</IsPSVerified>
       <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
       <StorageSelectors></StorageSelectors>
-      <Content>&lt;ToolboxItemSettings DisplayName="Создать папку" InternalName="NewFolder" FriendlyName="Создать новую папку" Width="200" Height="75" PathToImage="ExternalToolboxes\Image\ico_Files_Folders.png" PathToToolboxImage="{x:Null}" ImageType="LeftImage" NoDelete="False" Invisible="False" Proportional="True" Version="46" LinuxAvailable="True" Code="&amp;#xA;function NewFolder{{{block_id}}}&amp;#xA;{&amp;#xA; try&amp;#xA; {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;);&amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);   &amp;#xA;    &amp;#xA;    $thispath = {{{FolderName}}}; &amp;#xA;    &amp;#xA;        $thispath = ExpandConstFilePath $thispath&amp;#xA;        &amp;#xA;        [System.IO.Directory]::CreateDirectory($thispath); &amp;#xA;               &amp;#xA;        $thispath = $thispath.TrimEnd([System.IO.Path]::DirectorySeparatorChar);&amp;#xA;        &amp;#xA;        {{{Result}}} = $thispath;&amp;#xA;    }&amp;#xA;    &amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_);&amp;#xA;        return;&amp;#xA;    }&amp;#xA;    &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;" TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFF6C105&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFF6C105&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="8"&gt;&lt;Property Name="FolderName" Tooltip="[Текст] Полное имя новой папки" CatalogName="Required" Type="Expression" Value="$path_to_folder+&amp;quot;\&amp;quot;+$Result+&amp;quot;\pdf&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Имя папки" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Result" Tooltip="[Текст] Возвращается полный путь к созданной папке" CatalogName="Output" Type="Variable" Value="$result_path_to_res_folder" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Результат" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Error" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FFFF0000" Caption="Если ошибка" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Next" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000000" Caption="" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
+      <Content>&lt;ToolboxItemSettings DisplayName="Создать папку" InternalName="NewFolder" FriendlyName="Создать новую папку" Width="200" Height="75" PathToImage="ExternalToolboxes\Image\ico_Files_Folders.png" PathToToolboxImage="{x:Null}" ImageType="LeftImage" NoDelete="False" Invisible="False" Proportional="True" Version="46" LinuxAvailable="True" Code="&amp;#xA;function NewFolder{{{block_id}}}&amp;#xA;{&amp;#xA; try&amp;#xA; {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;);&amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);   &amp;#xA;    &amp;#xA;    $thispath = {{{FolderName}}}; &amp;#xA;    &amp;#xA;        $thispath = ExpandConstFilePath $thispath&amp;#xA;        &amp;#xA;        [System.IO.Directory]::CreateDirectory($thispath); &amp;#xA;               &amp;#xA;        $thispath = $thispath.TrimEnd([System.IO.Path]::DirectorySeparatorChar);&amp;#xA;        &amp;#xA;        {{{Result}}} = $thispath;&amp;#xA;    }&amp;#xA;    &amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_);&amp;#xA;        return;&amp;#xA;    }&amp;#xA;    &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;" TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFF6C105&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFF6C105&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="8"&gt;&lt;Property Name="FolderName" Tooltip="[Текст] Полное имя новой папки" CatalogName="Required" Type="Expression" Value="$path_to_folder+&amp;quot;\&amp;quot;+$Result" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Имя папки" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Result" Tooltip="[Текст] Возвращается полный путь к созданной папке" CatalogName="Output" Type="Variable" Value="$result_path_to_res_folder" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Результат" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Error" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FFFF0000" Caption="Если ошибка" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Next" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000000" Caption="" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
     </DesignerItem>
     <DesignerItem>
       <Left>80</Left>
@@ -97,7 +97,7 @@
       <Width>150</Width>
       <Height>100</Height>
       <ID>3dcca7f4-e1fd-49a6-9a15-afa8c4f3e2c5</ID>
-      <zIndex>18</zIndex>
+      <zIndex>15</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -112,7 +112,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>b8fe1ad9-641b-4ccb-af58-00e234f8642a</ID>
-      <zIndex>9</zIndex>
+      <zIndex>13</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -127,7 +127,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>87e948c3-bb8f-48fb-b193-cc45d0abeb92</ID>
-      <zIndex>14</zIndex>
+      <zIndex>18</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -142,7 +142,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>ffe9b3c2-8d93-486f-8d3f-b658ba13c872</ID>
-      <zIndex>11</zIndex>
+      <zIndex>9</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -157,7 +157,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>ac5ebaf9-8dc0-4c5a-b229-042431512402</ID>
-      <zIndex>12</zIndex>
+      <zIndex>11</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -172,7 +172,7 @@
       <Width>150</Width>
       <Height>100</Height>
       <ID>751ec7ad-69f9-4cc3-94ea-02563c63800a</ID>
-      <zIndex>19</zIndex>
+      <zIndex>14</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -198,7 +198,7 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
+      <SinkArrowSymbol>None</SinkArrowSymbol>
       <zIndex>1</zIndex>
     </Connection>
     <Connection>
@@ -207,7 +207,7 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
+      <SinkArrowSymbol>None</SinkArrowSymbol>
       <zIndex>5</zIndex>
     </Connection>
     <Connection>
@@ -216,8 +216,8 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>15</zIndex>
+      <SinkArrowSymbol>None</SinkArrowSymbol>
+      <zIndex>19</zIndex>
     </Connection>
     <Connection>
       <SourceID>94bae139-ea7e-414b-8851-297a5bed3224</SourceID>
@@ -225,8 +225,8 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>13</zIndex>
+      <SinkArrowSymbol>None</SinkArrowSymbol>
+      <zIndex>17</zIndex>
     </Connection>
     <Connection>
       <SourceID>87e948c3-bb8f-48fb-b193-cc45d0abeb92</SourceID>
@@ -234,8 +234,8 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>10</zIndex>
+      <SinkArrowSymbol>None</SinkArrowSymbol>
+      <zIndex>8</zIndex>
     </Connection>
     <Connection>
       <SourceID>ffe9b3c2-8d93-486f-8d3f-b658ba13c872</SourceID>
@@ -243,17 +243,17 @@
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>7</zIndex>
+      <SinkArrowSymbol>None</SinkArrowSymbol>
+      <zIndex>12</zIndex>
     </Connection>
     <Connection>
       <SourceID>ac5ebaf9-8dc0-4c5a-b229-042431512402</SourceID>
-      <SinkID>3dcca7f4-e1fd-49a6-9a15-afa8c4f3e2c5</SinkID>
+      <SinkID>31eac6eb-bec8-48a1-aa73-e0f8b76beac4</SinkID>
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>20</zIndex>
+      <zIndex>16</zIndex>
     </Connection>
     <Connection>
       <SourceID>b8fe1ad9-641b-4ccb-af58-00e234f8642a</SourceID>
@@ -262,7 +262,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>8</zIndex>
+      <zIndex>12</zIndex>
     </Connection>
   </Connections>
   <Properties>

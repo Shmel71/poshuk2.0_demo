@@ -7,7 +7,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>d19ded47-2358-4fa7-9c51-dac6024fbd0e</ID>
-      <zIndex>10</zIndex>
+      <zIndex>8</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -22,7 +22,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>82ed0ee0-3cfd-4cfc-9041-09b8024dd241</ID>
-      <zIndex>54</zIndex>
+      <zIndex>37</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -37,7 +37,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>73736ec0-e42c-42b0-be99-b84703093110</ID>
-      <zIndex>56</zIndex>
+      <zIndex>39</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -52,7 +52,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>f67ddf96-84d7-4742-9345-1ae622c9ac53</ID>
-      <zIndex>47</zIndex>
+      <zIndex>77</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -67,7 +67,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>db163c99-2516-4484-83be-7e14f4a4c22b</ID>
-      <zIndex>51</zIndex>
+      <zIndex>34</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -82,7 +82,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>24a29963-c7b9-41bd-8ce1-895e7dd54311</ID>
-      <zIndex>53</zIndex>
+      <zIndex>36</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -112,7 +112,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>fb31a74f-e4b3-4a25-897e-256f65fbffa5</ID>
-      <zIndex>75</zIndex>
+      <zIndex>86</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -127,7 +127,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>8c23b28a-52a1-44c8-a634-f75e0a850896</ID>
-      <zIndex>79</zIndex>
+      <zIndex>83</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -142,14 +142,14 @@
       <Width>100</Width>
       <Height>200</Height>
       <ID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</ID>
-      <zIndex>86</zIndex>
+      <zIndex>96</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
       <IsPSVerified>true</IsPSVerified>
       <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
       <StorageSelectors></StorageSelectors>
-      <Content>&lt;ToolboxItemSettings DisplayName="Switch/Case" InternalName="SwitchCase" FriendlyName="Оператор switch сравнивает выражение с указанными значениями и выходит по указанному коннектору. Если совпадений не будет обнаружено, то выходит по коннектору &amp;quot;По умолчанию&amp;quot;" Width="100" Height="200" PathToImage="ExternalToolboxes\Image\icotb_If condition.png" PathToToolboxImage="ExternalToolboxes\Image\icotb_If condition.png" ImageType="TopImage" NoDelete="False" Invisible="False" Proportional="False" Version="42" LinuxAvailable="True" Code="&amp;#xA;function SwitchCase{{{block_id}}}&amp;#xA;{&amp;#xA;    try&amp;#xA;    {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;); &amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);&amp;#xA;   &amp;#xA;        #Condition1 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition1Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition1}}}) &amp;#xA;            {         &amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression1}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }  &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes1}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        } &amp;#xA;        &amp;#xA;        #Condition2 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition2Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition2}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression2}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes2}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;       &amp;#xA;        #Condition3 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition3Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition3}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression3}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes3}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition4 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition4Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition4}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression4}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes4}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition5 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition5Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition5}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression5}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes5}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        try&amp;#xA;        {         &amp;#xA;            {{{ExpressionDefault}}}&amp;#xA;        }&amp;#xA;        catch { if($__Error.CheckException($_.Exception.Message)) {return;} }&amp;#xA;&amp;#xA;        $__Error.Jump(&amp;quot;{{{connector-Default}}}&amp;quot;);&amp;#xA;        return;&amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_); &amp;#xA;        return;&amp;#xA;    } &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;                " TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="True" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="16"&gt;&lt;Property Name="Statement" Tooltip="[Любой тип] Сравниваемое выражение" CatalogName="Required" Type="Expression" Value="$Item" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="{x:Null}" Caption="Выражение" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Condition1" Tooltip="[Любой тип] Условие 1. При совпадении будет произведен выход по коннектору 1, а также выполнено выражение 1 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;универсальный&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression1" Tooltip="[Выражение] При выполнении условия 1 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\upd.json&amp;quot;;$doc_type=&amp;quot;УПД&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition2" Tooltip="[Любой тип] Условие 2. При совпадении будет произведен выход по коннектору 2, а также выполнено выражение 2 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Акт &amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression2" Tooltip="[Выражение] При выполнении условия 2 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\act.json&amp;quot;;$doc_type=&amp;quot;Акт&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition3" Tooltip="[Любой тип] Условие 3. При совпадении будет произведен выход по коннектору 3, а также выполнено выражение 3 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression3" Tooltip="[Выражение] При выполнении условия 3 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\t_n.json&amp;quot;;$doc_type=&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition4" Tooltip="[Любой тип] Условие 4. При совпадении будет произведен выход по коннектору 4, а также выполнено выражение 4 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression4" Tooltip="[Выражение] При выполнении условия 4 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition5" Tooltip="[Любой тип] Условие 5. При совпадении будет произведен выход по коннектору 5, а также выполнено выражение 5 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression5" Tooltip="[Выражение] При выполнении условия 5 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ExpressionDefault" Tooltip="[Выражение] Если ни одно из условий не будет выполнено, то будет выполнено данное выражение" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение по умолчанию" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="8"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Default" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000080" Caption="По умолчанию" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Yes1" Orientation="Right" RelativePosition="1,0" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="1" /&gt;&lt;ConnectorSettings Name="Yes2" Orientation="Right" RelativePosition="1,0.25" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="2" /&gt;&lt;ConnectorSettings Name="Yes3" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="3" /&gt;&lt;ConnectorSettings Name="Yes4" Orientation="Right" RelativePosition="1,0.75" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="4" /&gt;&lt;ConnectorSettings Name="Yes5" Orientation="Right" RelativePosition="1,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="5" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
+      <Content>&lt;ToolboxItemSettings DisplayName="Switch/Case" InternalName="SwitchCase" FriendlyName="Оператор switch сравнивает выражение с указанными значениями и выходит по указанному коннектору. Если совпадений не будет обнаружено, то выходит по коннектору &amp;quot;По умолчанию&amp;quot;" Width="100" Height="200" PathToImage="ExternalToolboxes\Image\icotb_If condition.png" PathToToolboxImage="ExternalToolboxes\Image\icotb_If condition.png" ImageType="TopImage" NoDelete="False" Invisible="False" Proportional="False" Version="42" LinuxAvailable="True" Code="&amp;#xA;function SwitchCase{{{block_id}}}&amp;#xA;{&amp;#xA;    try&amp;#xA;    {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;); &amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);&amp;#xA;   &amp;#xA;        #Condition1 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition1Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition1}}}) &amp;#xA;            {         &amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression1}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }  &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes1}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        } &amp;#xA;        &amp;#xA;        #Condition2 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition2Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition2}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression2}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes2}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;       &amp;#xA;        #Condition3 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition3Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition3}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression3}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes3}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition4 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition4Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition4}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression4}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes4}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition5 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition5Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition5}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression5}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes5}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        try&amp;#xA;        {         &amp;#xA;            {{{ExpressionDefault}}}&amp;#xA;        }&amp;#xA;        catch { if($__Error.CheckException($_.Exception.Message)) {return;} }&amp;#xA;&amp;#xA;        $__Error.Jump(&amp;quot;{{{connector-Default}}}&amp;quot;);&amp;#xA;        return;&amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_); &amp;#xA;        return;&amp;#xA;    } &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;                " TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="True" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="16"&gt;&lt;Property Name="Statement" Tooltip="[Любой тип] Сравниваемое выражение" CatalogName="Required" Type="Expression" Value="$Item" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="{x:Null}" Caption="Выражение" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Condition1" Tooltip="[Любой тип] Условие 1. При совпадении будет произведен выход по коннектору 1, а также выполнено выражение 1 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;универсальный&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression1" Tooltip="[Выражение] При выполнении условия 1 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\upd.json&amp;quot;;$doc_type=&amp;quot;УПД&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition2" Tooltip="[Любой тип] Условие 2. При совпадении будет произведен выход по коннектору 2, а также выполнено выражение 2 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Акт &amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression2" Tooltip="[Выражение] При выполнении условия 2 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\act.json&amp;quot;;$doc_type=&amp;quot;Акт&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition3" Tooltip="[Любой тип] Условие 3. При совпадении будет произведен выход по коннектору 3, а также выполнено выражение 3 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression3" Tooltip="[Выражение] При выполнении условия 3 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\t_n.json&amp;quot;;$doc_type=&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition4" Tooltip="[Любой тип] Условие 4. При совпадении будет произведен выход по коннектору 4, а также выполнено выражение 4 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;фактура&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression4" Tooltip="[Выражение] При выполнении условия 4 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\s_f.json&amp;quot;;$doc_type=&amp;quot;Счет-фактура&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition5" Tooltip="[Любой тип] Условие 5. При совпадении будет произведен выход по коннектору 5, а также выполнено выражение 5 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression5" Tooltip="[Выражение] При выполнении условия 5 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ExpressionDefault" Tooltip="[Выражение] Если ни одно из условий не будет выполнено, то будет выполнено данное выражение" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение по умолчанию" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="8"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Default" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000080" Caption="По умолчанию" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Yes1" Orientation="Right" RelativePosition="1,0" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="1" /&gt;&lt;ConnectorSettings Name="Yes2" Orientation="Right" RelativePosition="1,0.25" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="2" /&gt;&lt;ConnectorSettings Name="Yes3" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="3" /&gt;&lt;ConnectorSettings Name="Yes4" Orientation="Right" RelativePosition="1,0.75" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="4" /&gt;&lt;ConnectorSettings Name="Yes5" Orientation="Right" RelativePosition="1,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="5" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
     </DesignerItem>
     <DesignerItem>
       <Left>825</Left>
@@ -157,7 +157,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>e3fdae56-0a1f-4d94-9dc0-239608a6ad40</ID>
-      <zIndex>89</zIndex>
+      <zIndex>93</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -172,7 +172,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>5d374db5-02f1-46c9-899a-11206943bf26</ID>
-      <zIndex>4</zIndex>
+      <zIndex>50</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -187,7 +187,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>89c8b12a-d790-4143-9275-f399cfa42234</ID>
-      <zIndex>58</zIndex>
+      <zIndex>41</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -202,7 +202,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>29cf3eb4-2165-4086-88a6-fe950f1bec28</ID>
-      <zIndex>92</zIndex>
+      <zIndex>46</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -217,7 +217,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>a783995a-43a9-4101-917d-caed3c868672</ID>
-      <zIndex>95</zIndex>
+      <zIndex>48</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -247,7 +247,7 @@
       <Width>20</Width>
       <Height>20</Height>
       <ID>b2724899-e09f-4ae3-8e7e-a438843e0a87</ID>
-      <zIndex>8</zIndex>
+      <zIndex>6</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -262,7 +262,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>a66867d9-526e-40d5-b916-598d363dbe3a</ID>
-      <zIndex>39</zIndex>
+      <zIndex>75</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -277,7 +277,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>8b56e456-5f69-40cb-ba26-d4aba3917f10</ID>
-      <zIndex>63</zIndex>
+      <zIndex>52</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -292,7 +292,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>8860a110-8f76-4cdf-84b4-972baeb13ef5</ID>
-      <zIndex>7</zIndex>
+      <zIndex>5</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -307,7 +307,7 @@
       <Width>20</Width>
       <Height>20</Height>
       <ID>9353b5e0-1eab-4b08-a9b3-881651d8f177</ID>
-      <zIndex>13</zIndex>
+      <zIndex>11</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -322,7 +322,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>6c6d5360-ee99-4126-9a32-84376e56f27d</ID>
-      <zIndex>25</zIndex>
+      <zIndex>56</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -337,7 +337,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>c0853425-9ed0-446e-b666-918e4777f5ed</ID>
-      <zIndex>16</zIndex>
+      <zIndex>14</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -367,7 +367,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>deeaf455-426b-4da8-a545-0d3f19bbd4b0</ID>
-      <zIndex>35</zIndex>
+      <zIndex>60</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -382,7 +382,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>2ed3667c-154a-4cb4-b286-1c8dab4afa82</ID>
-      <zIndex>20</zIndex>
+      <zIndex>16</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -397,7 +397,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>0bd4373b-0a33-4bc4-bcf4-dc77817b75bb</ID>
-      <zIndex>23</zIndex>
+      <zIndex>19</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -412,7 +412,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>4f98b824-ee42-432d-8648-f23bd6366a2e</ID>
-      <zIndex>41</zIndex>
+      <zIndex>63</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -427,7 +427,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>ebe3419f-36fa-46d8-9990-f5994c1df034</ID>
-      <zIndex>15</zIndex>
+      <zIndex>13</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -442,7 +442,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>955641a5-ead3-4d90-92c2-3f22c161a62b</ID>
-      <zIndex>43</zIndex>
+      <zIndex>27</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -457,7 +457,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>6ea75c46-98a1-422c-9001-63c0cad28d30</ID>
-      <zIndex>45</zIndex>
+      <zIndex>29</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -472,7 +472,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>26994f74-eb71-4a13-b3bd-ed3fd415ca2d</ID>
-      <zIndex>18</zIndex>
+      <zIndex>58</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -487,7 +487,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>90ac9c1b-e462-4e5d-b0d1-edd81b983129</ID>
-      <zIndex>59</zIndex>
+      <zIndex>42</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -502,7 +502,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>85e7145c-abaf-4d79-b14c-9200c8797563</ID>
-      <zIndex>27</zIndex>
+      <zIndex>54</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -517,7 +517,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>d747e8d6-a7f1-4b22-b67f-f952fc24e912</ID>
-      <zIndex>32</zIndex>
+      <zIndex>24</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -547,7 +547,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>b607b451-8733-4be3-84b1-c0f9334ff142</ID>
-      <zIndex>49</zIndex>
+      <zIndex>32</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -562,7 +562,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>9c3b27e6-362f-43ad-8cc6-a847fc15b403</ID>
-      <zIndex>62</zIndex>
+      <zIndex>45</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -577,7 +577,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>464ee295-5b38-4daa-b867-4882ff4c5392</ID>
-      <zIndex>82</zIndex>
+      <zIndex>87</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -607,7 +607,7 @@
       <Width>20</Width>
       <Height>20</Height>
       <ID>afb3e79e-7dd2-4017-bf45-fed44c056dd6</ID>
-      <zIndex>12</zIndex>
+      <zIndex>10</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -622,7 +622,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>87ad6c1e-d4d4-4060-a552-9c0d4bd81c4d</ID>
-      <zIndex>84</zIndex>
+      <zIndex>89</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -637,7 +637,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>d14c26cd-013f-4eea-b847-be750b0f3138</ID>
-      <zIndex>30</zIndex>
+      <zIndex>22</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -652,7 +652,7 @@
       <Width>150</Width>
       <Height>100</Height>
       <ID>605e35a9-3e9c-45bc-a522-c39666f8a12a</ID>
-      <zIndex>61</zIndex>
+      <zIndex>44</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>false</IsEnabled>
       <Description></Description>
@@ -667,7 +667,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>7d85b8e0-bd17-4eb0-83f2-dc7a0a6e616d</ID>
-      <zIndex>94</zIndex>
+      <zIndex>81</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -685,7 +685,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>46</zIndex>
+      <zIndex>30</zIndex>
     </Connection>
     <Connection>
       <SourceID>db163c99-2516-4484-83be-7e14f4a4c22b</SourceID>
@@ -694,7 +694,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>48</zIndex>
+      <zIndex>31</zIndex>
     </Connection>
     <Connection>
       <SourceID>73736ec0-e42c-42b0-be99-b84703093110</SourceID>
@@ -703,7 +703,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>55</zIndex>
+      <zIndex>38</zIndex>
     </Connection>
     <Connection>
       <SourceID>f9f1caf7-8cfc-463d-acc2-f2156991dc25</SourceID>
@@ -721,7 +721,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>80</zIndex>
+      <zIndex>84</zIndex>
     </Connection>
     <Connection>
       <SourceID>fb31a74f-e4b3-4a25-897e-256f65fbffa5</SourceID>
@@ -730,7 +730,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>81</zIndex>
+      <zIndex>85</zIndex>
     </Connection>
     <Connection>
       <SourceID>82ed0ee0-3cfd-4cfc-9041-09b8024dd241</SourceID>
@@ -739,7 +739,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>36</zIndex>
+      <zIndex>26</zIndex>
     </Connection>
     <Connection>
       <SourceID>e3fdae56-0a1f-4d94-9dc0-239608a6ad40</SourceID>
@@ -748,7 +748,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>93</zIndex>
+      <zIndex>47</zIndex>
     </Connection>
     <Connection>
       <SourceID>29cf3eb4-2165-4086-88a6-fe950f1bec28</SourceID>
@@ -757,7 +757,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>96</zIndex>
+      <zIndex>49</zIndex>
     </Connection>
     <Connection>
       <SourceID>24a29963-c7b9-41bd-8ce1-895e7dd54311</SourceID>
@@ -766,7 +766,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>52</zIndex>
+      <zIndex>35</zIndex>
     </Connection>
     <Connection>
       <SourceID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</SourceID>
@@ -775,7 +775,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>87</zIndex>
+      <zIndex>91</zIndex>
     </Connection>
     <Connection>
       <SourceID>b2724899-e09f-4ae3-8e7e-a438843e0a87</SourceID>
@@ -784,7 +784,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>91</zIndex>
+      <zIndex>95</zIndex>
     </Connection>
     <Connection>
       <SourceID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</SourceID>
@@ -793,7 +793,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>88</zIndex>
+      <zIndex>92</zIndex>
     </Connection>
     <Connection>
       <SourceID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</SourceID>
@@ -802,7 +802,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>90</zIndex>
+      <zIndex>94</zIndex>
     </Connection>
     <Connection>
       <SourceID>f9f1caf7-8cfc-463d-acc2-f2156991dc25</SourceID>
@@ -820,7 +820,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>64</zIndex>
+      <zIndex>53</zIndex>
     </Connection>
     <Connection>
       <SourceID>8c23b28a-52a1-44c8-a634-f75e0a850896</SourceID>
@@ -829,7 +829,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>76</zIndex>
+      <zIndex>79</zIndex>
     </Connection>
     <Connection>
       <SourceID>9353b5e0-1eab-4b08-a9b3-881651d8f177</SourceID>
@@ -838,7 +838,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>77</zIndex>
+      <zIndex>80</zIndex>
     </Connection>
     <Connection>
       <SourceID>292062fb-8507-40e4-ab93-d0fe2c5985c1</SourceID>
@@ -847,7 +847,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>37</zIndex>
+      <zIndex>76</zIndex>
     </Connection>
     <Connection>
       <SourceID>6c6d5360-ee99-4126-9a32-84376e56f27d</SourceID>
@@ -856,7 +856,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>19</zIndex>
+      <zIndex>59</zIndex>
     </Connection>
     <Connection>
       <SourceID>c0853425-9ed0-446e-b666-918e4777f5ed</SourceID>
@@ -883,7 +883,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>21</zIndex>
+      <zIndex>17</zIndex>
     </Connection>
     <Connection>
       <SourceID>4f98b824-ee42-432d-8648-f23bd6366a2e</SourceID>
@@ -892,7 +892,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>14</zIndex>
+      <zIndex>12</zIndex>
     </Connection>
     <Connection>
       <SourceID>a783995a-43a9-4101-917d-caed3c868672</SourceID>
@@ -901,7 +901,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>3</zIndex>
+      <zIndex>51</zIndex>
     </Connection>
     <Connection>
       <SourceID>6c6d5360-ee99-4126-9a32-84376e56f27d</SourceID>
@@ -910,7 +910,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>34</zIndex>
+      <zIndex>61</zIndex>
     </Connection>
     <Connection>
       <SourceID>26994f74-eb71-4a13-b3bd-ed3fd415ca2d</SourceID>
@@ -919,7 +919,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>5</zIndex>
+      <zIndex>3</zIndex>
     </Connection>
     <Connection>
       <SourceID>6ea75c46-98a1-422c-9001-63c0cad28d30</SourceID>
@@ -928,7 +928,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>44</zIndex>
+      <zIndex>28</zIndex>
     </Connection>
     <Connection>
       <SourceID>955641a5-ead3-4d90-92c2-3f22c161a62b</SourceID>
@@ -937,7 +937,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>6</zIndex>
+      <zIndex>4</zIndex>
     </Connection>
     <Connection>
       <SourceID>8b56e456-5f69-40cb-ba26-d4aba3917f10</SourceID>
@@ -946,7 +946,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>28</zIndex>
+      <zIndex>55</zIndex>
     </Connection>
     <Connection>
       <SourceID>85e7145c-abaf-4d79-b14c-9200c8797563</SourceID>
@@ -955,7 +955,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>26</zIndex>
+      <zIndex>57</zIndex>
     </Connection>
     <Connection>
       <SourceID>8860a110-8f76-4cdf-84b4-972baeb13ef5</SourceID>
@@ -964,7 +964,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>29</zIndex>
+      <zIndex>21</zIndex>
     </Connection>
     <Connection>
       <SourceID>d747e8d6-a7f1-4b22-b67f-f952fc24e912</SourceID>
@@ -973,7 +973,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>33</zIndex>
+      <zIndex>25</zIndex>
     </Connection>
     <Connection>
       <SourceID>2ed3667c-154a-4cb4-b286-1c8dab4afa82</SourceID>
@@ -982,7 +982,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>9</zIndex>
+      <zIndex>7</zIndex>
     </Connection>
     <Connection>
       <SourceID>ebe3419f-36fa-46d8-9990-f5994c1df034</SourceID>
@@ -991,7 +991,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>17</zIndex>
+      <zIndex>15</zIndex>
     </Connection>
     <Connection>
       <SourceID>deeaf455-426b-4da8-a545-0d3f19bbd4b0</SourceID>
@@ -1000,7 +1000,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>22</zIndex>
+      <zIndex>18</zIndex>
     </Connection>
     <Connection>
       <SourceID>0bd4373b-0a33-4bc4-bcf4-dc77817b75bb</SourceID>
@@ -1009,7 +1009,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>40</zIndex>
+      <zIndex>62</zIndex>
     </Connection>
     <Connection>
       <SourceID>0bd4373b-0a33-4bc4-bcf4-dc77817b75bb</SourceID>
@@ -1018,7 +1018,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>42</zIndex>
+      <zIndex>64</zIndex>
     </Connection>
     <Connection>
       <SourceID>b607b451-8733-4be3-84b1-c0f9334ff142</SourceID>
@@ -1027,7 +1027,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>11</zIndex>
+      <zIndex>9</zIndex>
     </Connection>
     <Connection>
       <SourceID>9c3b27e6-362f-43ad-8cc6-a847fc15b403</SourceID>
@@ -1036,7 +1036,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>83</zIndex>
+      <zIndex>88</zIndex>
     </Connection>
     <Connection>
       <SourceID>ac30f5d5-2336-4505-8747-6453825765ff</SourceID>
@@ -1063,7 +1063,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>24</zIndex>
+      <zIndex>20</zIndex>
     </Connection>
     <Connection>
       <SourceID>292062fb-8507-40e4-ab93-d0fe2c5985c1</SourceID>
@@ -1072,7 +1072,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>38</zIndex>
+      <zIndex>78</zIndex>
     </Connection>
     <Connection>
       <SourceID>db163c99-2516-4484-83be-7e14f4a4c22b</SourceID>
@@ -1081,7 +1081,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>50</zIndex>
+      <zIndex>33</zIndex>
     </Connection>
     <Connection>
       <SourceID>89c8b12a-d790-4143-9275-f399cfa42234</SourceID>
@@ -1090,7 +1090,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>57</zIndex>
+      <zIndex>40</zIndex>
     </Connection>
     <Connection>
       <SourceID>afb3e79e-7dd2-4017-bf45-fed44c056dd6</SourceID>
@@ -1117,7 +1117,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>85</zIndex>
+      <zIndex>90</zIndex>
     </Connection>
     <Connection>
       <SourceID>d14c26cd-013f-4eea-b847-be750b0f3138</SourceID>
@@ -1126,7 +1126,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>31</zIndex>
+      <zIndex>23</zIndex>
     </Connection>
     <Connection>
       <SourceID>605e35a9-3e9c-45bc-a522-c39666f8a12a</SourceID>
@@ -1135,7 +1135,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>60</zIndex>
+      <zIndex>43</zIndex>
     </Connection>
     <Connection>
       <SourceID>8c23b28a-52a1-44c8-a634-f75e0a850896</SourceID>
@@ -1144,17 +1144,26 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>78</zIndex>
+      <zIndex>82</zIndex>
+    </Connection>
+    <Connection>
+      <SourceID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</SourceID>
+      <SinkID>b2724899-e09f-4ae3-8e7e-a438843e0a87</SinkID>
+      <SourceConnectorName>Yes4</SourceConnectorName>
+      <SinkConnectorName>InOut</SinkConnectorName>
+      <SourceArrowSymbol>None</SourceArrowSymbol>
+      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
+      <zIndex>5</zIndex>
     </Connection>
   </Connections>
   <Properties>
-    <DiagramProperty Name="check_list" Type="List" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAEAQAAAH9TeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24GAAAICAkCAAAAAwAAAAMAAAARAgAAAAQAAAAGAwAAABrRg9C90LjQstC10YDRgdCw0LvRjNC90YvQuQYEAAAAB9CQ0LrRgiAGBQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjwoL" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAH9TeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24GAAAICAkCAAAAAwAAAAMAAAARAgAAAAQAAAAGAwAAABrRg9C90LjQstC10YDRgdCw0LvRjNC90YvQuQYEAAAAB9CQ0LrRgiAGBQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjwoL" />
-    <DiagramProperty Name="pattern" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAABFwYXR0ZXJuc1x0X24uanNvbgs=" />
-    <DiagramProperty Name="doc_type" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjws=" />
-    <DiagramProperty Name="line_index" Type="Number" IsGlobal="False" DefaultValue="2" Value="2" />
+    <DiagramProperty Name="check_list" Type="List" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAEAQAAAH9TeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24GAAAICAkCAAAABAAAAAQAAAARAgAAAAQAAAAGAwAAABrRg9C90LjQstC10YDRgdCw0LvRjNC90YvQuQYEAAAAB9CQ0LrRgiAGBQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjwYGAAAADtGE0LDQutGC0YPRgNCwCw==" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAH9TeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24GAAAICAkCAAAABAAAAAQAAAARAgAAAAQAAAAGAwAAABrRg9C90LjQstC10YDRgdCw0LvRjNC90YvQuQYEAAAAB9CQ0LrRgiAGBQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjwYGAAAADtGE0LDQutGC0YPRgNCwCw==" />
+    <DiagramProperty Name="pattern" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAABFwYXR0ZXJuc1xzX2YuanNvbgs=" />
+    <DiagramProperty Name="doc_type" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAABfQodGH0LXRgi3RhNCw0LrRgtGD0YDQsAs=" />
+    <DiagramProperty Name="line_index" Type="Number" IsGlobal="False" DefaultValue="2" Value="3" />
     <DiagramProperty Name="row_index" Type="Number" IsGlobal="False" DefaultValue="1" Value="1" />
-    <DiagramProperty Name="date" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAAL" />
-    <DiagramProperty Name="number" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAAL" />
-    <DiagramProperty Name="Value" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAACsiDQoNCuKEliAyINC+0YIgMTUg0LTQtdC60LDQsdGA0Y8gMjAyMyDQsy4iCw==" Value="AAEAAAD/////AQAAAAAAAAAGAQAAACkNCg0K4oSWIDIg0L7RgiAxNSDQtNC10LrQsNCx0YDRjyAyMDIzINCzLgs=" />
+    <DiagramProperty Name="date" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAowMS4xMi4yMDIzCw==" />
+    <DiagramProperty Name="number" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAI5OAs=" />
+    <DiagramProperty Name="Value" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAACsiDQoNCuKEliAyINC+0YIgMTUg0LTQtdC60LDQsdGA0Y8gMjAyMyDQsy4iCw==" Value="AAEAAAD/////AQAAAAAAAAAGAQAAABY5OCAwMS4xMi4yMDIzINC00LDRgtCwCw==" />
   </Properties>
 </Root>

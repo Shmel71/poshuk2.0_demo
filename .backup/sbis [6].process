@@ -112,7 +112,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>fc12af35-9e9d-46f9-9761-1802ee663b62</ID>
-      <zIndex>90</zIndex>
+      <zIndex>83</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -142,7 +142,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>04de2a54-ffc7-4a57-9c9a-77c3c31b6c7f</ID>
-      <zIndex>86</zIndex>
+      <zIndex>79</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -322,7 +322,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>008536e0-186d-4196-9fd4-f74a93922a1c</ID>
-      <zIndex>88</zIndex>
+      <zIndex>81</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -337,7 +337,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>7170ac7d-680f-4ab7-a9ff-1a3b29209417</ID>
-      <zIndex>99</zIndex>
+      <zIndex>97</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -457,7 +457,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>c20051bf-4940-4ecc-9a71-6741f78c6d57</ID>
-      <zIndex>73</zIndex>
+      <zIndex>94</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -472,7 +472,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>72eca828-de90-4fb1-8d62-cd4e356cca1c</ID>
-      <zIndex>80</zIndex>
+      <zIndex>100</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -487,7 +487,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>0fe0cbb6-f0cc-4d9a-a1cb-a388ed7951c1</ID>
-      <zIndex>95</zIndex>
+      <zIndex>87</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -502,7 +502,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>a8c0ad2b-1eec-48d0-ba1c-6f4e4f5bcbc5</ID>
-      <zIndex>93</zIndex>
+      <zIndex>85</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -517,7 +517,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>6375f2e1-8529-447b-a036-cc0397081fe7</ID>
-      <zIndex>75</zIndex>
+      <zIndex>73</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -547,7 +547,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>ccfd8345-4e43-4447-bdf7-912408097f26</ID>
-      <zIndex>98</zIndex>
+      <zIndex>91</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -562,7 +562,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>31206956-f463-4e88-bf25-c0d6221ffd97</ID>
-      <zIndex>92</zIndex>
+      <zIndex>89</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -577,7 +577,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>89f1ab40-c290-4173-bf17-4ea64476facb</ID>
-      <zIndex>101</zIndex>
+      <zIndex>99</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -637,7 +637,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>af0532f1-e69b-4df5-80ac-3b91c7a225f9</ID>
-      <zIndex>79</zIndex>
+      <zIndex>77</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -652,7 +652,7 @@
       <Width>150</Width>
       <Height>100</Height>
       <ID>c314ed5e-38e9-4e5c-a040-ccea49dd8488</ID>
-      <zIndex>83</zIndex>
+      <zIndex>90</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -749,7 +749,7 @@
       <IsPSVerified>true</IsPSVerified>
       <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
       <StorageSelectors></StorageSelectors>
-      <Content>&lt;ToolboxItemSettings DisplayName="Лог" InternalName="Log" FriendlyName="Позволяет выводить в лог произвольные сообщения и/или значения переменных в процессе работы сценария робота. Сообщения будут доступны для просмотра в панели Лог программы-дизайнера, а также в текстовых файлах логов программы-робота." Width="100" Height="100" PathToImage="ExternalToolboxes\Image\ico_Log.png" PathToToolboxImage="{x:Null}" ImageType="TopImage" NoDelete="False" Invisible="False" Proportional="True" Version="163" LinuxAvailable="True" Code="&amp;#xA;function Log{{{block_id}}}&amp;#xA;{   &amp;#xA;    try&amp;#xA;    {&amp;#xA;        $Value          = {{{Value}}};&amp;#xA;        $ShowStatus     = ${{{ShowStatus}}};&amp;#xA;        $SendOrkest     = ${{{SendOrkest}}};&amp;#xA;        $IsScreenshot   = ${{{IsScreenshot}}};&amp;#xA;        $MakeScreenshot = ${{{MakeScreenshot}}};&amp;#xA;    &amp;#xA;        $ValueStr = VarToString($Value); &amp;#xA;         &amp;#xA;        $val = _shield $ValueStr;&amp;#xA;        if($ShowStatus)&amp;#xA;        {       &amp;#xA;            Write-Host(&amp;quot;&amp;lt;block&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;ShowStatus&amp;lt;/InternalName&amp;gt;&amp;lt;UITextValue&amp;gt;$val&amp;lt;/UITextValue&amp;gt;&amp;lt;/block&amp;gt;&amp;quot;); &amp;#xA;        }&amp;#xA;        &amp;#xA;        if($SendOrkest -or $IsScreenshot)&amp;#xA;        {                      &amp;#xA;            if($val.Length -eq 0)&amp;#xA;            {&amp;#xA;                $val = &amp;quot;Screenshot &amp;quot;+[DateTime]::Now.ToString();&amp;#xA;            }&amp;#xA;            Write-Host(&amp;quot;&amp;lt;block&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;SendLogOrkest&amp;lt;/InternalName&amp;gt;&amp;lt;UITextValue&amp;gt;$val&amp;lt;/UITextValue&amp;gt;&amp;lt;UITextType&amp;gt;{{{Level}}}&amp;lt;/UITextType&amp;gt;&amp;lt;IsScreenshot&amp;gt;{{{IsScreenshot}}}&amp;lt;/IsScreenshot&amp;gt;&amp;lt;/block&amp;gt;&amp;quot;); &amp;#xA;        }&amp;#xA;        &amp;#xA;        $xmlvar = &amp;quot;&amp;quot;;&amp;#xA;        try&amp;#xA;        {&amp;#xA;            $xmlvar = $script:__BinFormatter.vartoxmlraw($Value);&amp;#xA;        }&amp;#xA;        catch{} &amp;#xA;        Write-Host(&amp;quot;&amp;lt;info&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;Log&amp;lt;/InternalName&amp;gt;&amp;lt;InternalValue&amp;gt;$val&amp;lt;/InternalValue&amp;gt;$xmlvar&amp;lt;/info&amp;gt;&amp;quot;);&amp;#xA;        if($MakeScreenshot)&amp;#xA;        {&amp;#xA;            $psresultstr = Read-Host(&amp;quot;&amp;lt;block&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;MakeScreenshot&amp;lt;/InternalName&amp;gt;&amp;lt;ProcessID&amp;gt;&amp;lt;/ProcessID&amp;gt;&amp;lt;ScreenshotToLog&amp;gt;True&amp;lt;/ScreenshotToLog&amp;gt;&amp;lt;/block&amp;gt;&amp;quot;); &amp;#xA;        }&amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;    }  &amp;#xA;    $script:__LastBlockID = &amp;quot;{{{block_native_id}}}&amp;quot;;&amp;#xA;    $script:__NextBlockID = &amp;quot;{{{connector-Next}}}&amp;quot;;&amp;#xA;}                   &amp;#xA;                " TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="8"&gt;&lt;Property Name="Value" Tooltip="[Любой тип данных] Числовая, текстовая константа (в кавычках), имя переменной (начинающееся с $) или любое выражение, значение которого будет выведено в лог в процессе работы сценария робота. Значение может в том числе иметь сложный тип данных, например Список, Таблица или Словарь." CatalogName="Main properties" Type="Expression" Value="$Index" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="{x:Null}" Caption="Значение" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="MakeScreenshot" Tooltip="Создает скриншот и сохраняет его в папке с логами" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Сделать скриншот" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="SendOrkest" Tooltip="Если выбрано, то текст будет также логироваться в оркестратор, если подключение к нему активно" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Оркестратор. Логировать" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="IsScreenshot" Tooltip="Если выбрано, то будет создан скриншот экрана и отправлен в оркестратор, если подключение к нему активно" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Оркестратор. Скриншот" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Level" Tooltip="Уровень сообщения при отправке лога в оркестратор" CatalogName="Main properties" Type="Enum" Value="Info" Visible="True" DefaultValue="" ValueType="" EnumVariants="Info;Critical;Error;Warning;Debug" Caption="Оркестратор. Уровень" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ShowStatus" Tooltip="Если выбрано, то текст будет также выводиться в статусе, в верхней части экрана" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Отображать в статусе" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Next" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000000" Caption="" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
+      <Content>&lt;ToolboxItemSettings DisplayName="Лог" InternalName="Log" FriendlyName="Позволяет выводить в лог произвольные сообщения и/или значения переменных в процессе работы сценария робота. Сообщения будут доступны для просмотра в панели Лог программы-дизайнера, а также в текстовых файлах логов программы-робота." Width="100" Height="100" PathToImage="ExternalToolboxes\Image\ico_Log.png" PathToToolboxImage="{x:Null}" ImageType="TopImage" NoDelete="False" Invisible="False" Proportional="True" Version="163" LinuxAvailable="True" Code="&amp;#xA;function Log{{{block_id}}}&amp;#xA;{   &amp;#xA;    try&amp;#xA;    {&amp;#xA;        $Value          = {{{Value}}};&amp;#xA;        $ShowStatus     = ${{{ShowStatus}}};&amp;#xA;        $SendOrkest     = ${{{SendOrkest}}};&amp;#xA;        $IsScreenshot   = ${{{IsScreenshot}}};&amp;#xA;        $MakeScreenshot = ${{{MakeScreenshot}}};&amp;#xA;    &amp;#xA;        $ValueStr = VarToString($Value); &amp;#xA;         &amp;#xA;        $val = _shield $ValueStr;&amp;#xA;        if($ShowStatus)&amp;#xA;        {       &amp;#xA;            Write-Host(&amp;quot;&amp;lt;block&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;ShowStatus&amp;lt;/InternalName&amp;gt;&amp;lt;UITextValue&amp;gt;$val&amp;lt;/UITextValue&amp;gt;&amp;lt;/block&amp;gt;&amp;quot;); &amp;#xA;        }&amp;#xA;        &amp;#xA;        if($SendOrkest -or $IsScreenshot)&amp;#xA;        {                      &amp;#xA;            if($val.Length -eq 0)&amp;#xA;            {&amp;#xA;                $val = &amp;quot;Screenshot &amp;quot;+[DateTime]::Now.ToString();&amp;#xA;            }&amp;#xA;            Write-Host(&amp;quot;&amp;lt;block&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;SendLogOrkest&amp;lt;/InternalName&amp;gt;&amp;lt;UITextValue&amp;gt;$val&amp;lt;/UITextValue&amp;gt;&amp;lt;UITextType&amp;gt;{{{Level}}}&amp;lt;/UITextType&amp;gt;&amp;lt;IsScreenshot&amp;gt;{{{IsScreenshot}}}&amp;lt;/IsScreenshot&amp;gt;&amp;lt;/block&amp;gt;&amp;quot;); &amp;#xA;        }&amp;#xA;        &amp;#xA;        $xmlvar = &amp;quot;&amp;quot;;&amp;#xA;        try&amp;#xA;        {&amp;#xA;            $xmlvar = $script:__BinFormatter.vartoxmlraw($Value);&amp;#xA;        }&amp;#xA;        catch{} &amp;#xA;        Write-Host(&amp;quot;&amp;lt;info&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;Log&amp;lt;/InternalName&amp;gt;&amp;lt;InternalValue&amp;gt;$val&amp;lt;/InternalValue&amp;gt;$xmlvar&amp;lt;/info&amp;gt;&amp;quot;);&amp;#xA;        if($MakeScreenshot)&amp;#xA;        {&amp;#xA;            $psresultstr = Read-Host(&amp;quot;&amp;lt;block&amp;gt;&amp;lt;ID&amp;gt;{{{block_native_id}}}&amp;lt;/ID&amp;gt;&amp;lt;InternalName&amp;gt;MakeScreenshot&amp;lt;/InternalName&amp;gt;&amp;lt;ProcessID&amp;gt;&amp;lt;/ProcessID&amp;gt;&amp;lt;ScreenshotToLog&amp;gt;True&amp;lt;/ScreenshotToLog&amp;gt;&amp;lt;/block&amp;gt;&amp;quot;); &amp;#xA;        }&amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;    }  &amp;#xA;    $script:__LastBlockID = &amp;quot;{{{block_native_id}}}&amp;quot;;&amp;#xA;    $script:__NextBlockID = &amp;quot;{{{connector-Next}}}&amp;quot;;&amp;#xA;}                   &amp;#xA;                " TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="8"&gt;&lt;Property Name="Value" Tooltip="[Любой тип данных] Числовая, текстовая константа (в кавычках), имя переменной (начинающееся с $) или любое выражение, значение которого будет выведено в лог в процессе работы сценария робота. Значение может в том числе иметь сложный тип данных, например Список, Таблица или Словарь." CatalogName="Main properties" Type="Expression" Value="$res_page_number" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="{x:Null}" Caption="Значение" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="MakeScreenshot" Tooltip="Создает скриншот и сохраняет его в папке с логами" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Сделать скриншот" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="SendOrkest" Tooltip="Если выбрано, то текст будет также логироваться в оркестратор, если подключение к нему активно" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Оркестратор. Логировать" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="IsScreenshot" Tooltip="Если выбрано, то будет создан скриншот экрана и отправлен в оркестратор, если подключение к нему активно" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Оркестратор. Скриншот" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Level" Tooltip="Уровень сообщения при отправке лога в оркестратор" CatalogName="Main properties" Type="Enum" Value="Info" Visible="True" DefaultValue="" ValueType="" EnumVariants="Info;Critical;Error;Warning;Debug" Caption="Оркестратор. Уровень" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ShowStatus" Tooltip="Если выбрано, то текст будет также выводиться в статусе, в верхней части экрана" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Отображать в статусе" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Next" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000000" Caption="" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
     </DesignerItem>
   </DesignerItems>
   <Connections>
@@ -814,7 +814,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>87</zIndex>
+      <zIndex>80</zIndex>
     </Connection>
     <Connection>
       <SourceID>04de2a54-ffc7-4a57-9c9a-77c3c31b6c7f</SourceID>
@@ -913,7 +913,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>89</zIndex>
+      <zIndex>82</zIndex>
     </Connection>
     <Connection>
       <SourceID>228e6d10-4114-4a22-8e00-9f36f3cb93b2</SourceID>
@@ -1003,7 +1003,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>74</zIndex>
+      <zIndex>95</zIndex>
     </Connection>
     <Connection>
       <SourceID>6375f2e1-8529-447b-a036-cc0397081fe7</SourceID>
@@ -1021,7 +1021,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>82</zIndex>
+      <zIndex>102</zIndex>
     </Connection>
     <Connection>
       <SourceID>a8c0ad2b-1eec-48d0-ba1c-6f4e4f5bcbc5</SourceID>
@@ -1030,7 +1030,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>76</zIndex>
+      <zIndex>74</zIndex>
     </Connection>
     <Connection>
       <SourceID>31206956-f463-4e88-bf25-c0d6221ffd97</SourceID>
@@ -1039,16 +1039,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>85</zIndex>
-    </Connection>
-    <Connection>
-      <SourceID>31206956-f463-4e88-bf25-c0d6221ffd97</SourceID>
-      <SinkID>7ed8dc27-36ee-47d7-b3d6-e4df1c6dbcd8</SinkID>
-      <SourceConnectorName>Yes</SourceConnectorName>
-      <SinkConnectorName>Input</SinkConnectorName>
-      <SourceArrowSymbol>None</SourceArrowSymbol>
-      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>96</zIndex>
+      <zIndex>92</zIndex>
     </Connection>
     <Connection>
       <SourceID>89f1ab40-c290-4173-bf17-4ea64476facb</SourceID>
@@ -1057,7 +1048,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>100</zIndex>
+      <zIndex>98</zIndex>
     </Connection>
     <Connection>
       <SourceID>ccfd8345-4e43-4447-bdf7-912408097f26</SourceID>
@@ -1066,7 +1057,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>97</zIndex>
+      <zIndex>88</zIndex>
     </Connection>
     <Connection>
       <SourceID>fbe8cc06-7855-4f44-bbf9-debec3e8d607</SourceID>
@@ -1093,7 +1084,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>77</zIndex>
+      <zIndex>75</zIndex>
     </Connection>
     <Connection>
       <SourceID>0fe0cbb6-f0cc-4d9a-a1cb-a388ed7951c1</SourceID>
@@ -1102,7 +1093,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>94</zIndex>
+      <zIndex>86</zIndex>
     </Connection>
     <Connection>
       <SourceID>af0532f1-e69b-4df5-80ac-3b91c7a225f9</SourceID>
@@ -1111,7 +1102,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>78</zIndex>
+      <zIndex>76</zIndex>
     </Connection>
     <Connection>
       <SourceID>c314ed5e-38e9-4e5c-a040-ccea49dd8488</SourceID>
@@ -1120,7 +1111,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>81</zIndex>
+      <zIndex>78</zIndex>
     </Connection>
     <Connection>
       <SourceID>42f92d7f-dea3-42b4-ac88-8ff36d14e17f</SourceID>
@@ -1214,12 +1205,12 @@
     </Connection>
     <Connection>
       <SourceID>7170ac7d-680f-4ab7-a9ff-1a3b29209417</SourceID>
-      <SinkID>c314ed5e-38e9-4e5c-a040-ccea49dd8488</SinkID>
+      <SinkID>7ed8dc27-36ee-47d7-b3d6-e4df1c6dbcd8</SinkID>
       <SourceConnectorName>Next</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>84</zIndex>
+      <zIndex>96</zIndex>
     </Connection>
     <Connection>
       <SourceID>0fe0cbb6-f0cc-4d9a-a1cb-a388ed7951c1</SourceID>
@@ -1228,16 +1219,25 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>91</zIndex>
+      <zIndex>84</zIndex>
     </Connection>
     <Connection>
-      <SourceID>7ed8dc27-36ee-47d7-b3d6-e4df1c6dbcd8</SourceID>
+      <SourceID>31206956-f463-4e88-bf25-c0d6221ffd97</SourceID>
       <SinkID>89f1ab40-c290-4173-bf17-4ea64476facb</SinkID>
-      <SourceConnectorName>Next</SourceConnectorName>
+      <SourceConnectorName>Yes</SourceConnectorName>
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>102</zIndex>
+      <zIndex>93</zIndex>
+    </Connection>
+    <Connection>
+      <SourceID>7ed8dc27-36ee-47d7-b3d6-e4df1c6dbcd8</SourceID>
+      <SinkID>df2e1433-4d84-4069-9a8f-0657f58a1cdd</SinkID>
+      <SourceConnectorName>Next</SourceConnectorName>
+      <SinkConnectorName>InOut</SinkConnectorName>
+      <SourceArrowSymbol>None</SourceArrowSymbol>
+      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
+      <zIndex>101</zIndex>
     </Connection>
   </Connections>
   <Properties>

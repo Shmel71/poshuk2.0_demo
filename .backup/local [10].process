@@ -52,7 +52,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>f67ddf96-84d7-4742-9345-1ae622c9ac53</ID>
-      <zIndex>104</zIndex>
+      <zIndex>100</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -97,7 +97,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>f9f1caf7-8cfc-463d-acc2-f2156991dc25</ID>
-      <zIndex>80</zIndex>
+      <zIndex>77</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -112,7 +112,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>fb31a74f-e4b3-4a25-897e-256f65fbffa5</ID>
-      <zIndex>87</zIndex>
+      <zIndex>84</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -127,7 +127,7 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>8c23b28a-52a1-44c8-a634-f75e0a850896</ID>
-      <zIndex>84</zIndex>
+      <zIndex>81</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -142,14 +142,14 @@
       <Width>100</Width>
       <Height>200</Height>
       <ID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</ID>
-      <zIndex>88</zIndex>
+      <zIndex>85</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
       <IsPSVerified>true</IsPSVerified>
       <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
       <StorageSelectors></StorageSelectors>
-      <Content>&lt;ToolboxItemSettings DisplayName="Switch/Case" InternalName="SwitchCase" FriendlyName="Оператор switch сравнивает выражение с указанными значениями и выходит по указанному коннектору. Если совпадений не будет обнаружено, то выходит по коннектору &amp;quot;По умолчанию&amp;quot;" Width="100" Height="200" PathToImage="ExternalToolboxes\Image\icotb_If condition.png" PathToToolboxImage="ExternalToolboxes\Image\icotb_If condition.png" ImageType="TopImage" NoDelete="False" Invisible="False" Proportional="False" Version="42" LinuxAvailable="True" Code="&amp;#xA;function SwitchCase{{{block_id}}}&amp;#xA;{&amp;#xA;    try&amp;#xA;    {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;); &amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);&amp;#xA;   &amp;#xA;        #Condition1 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition1Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition1}}}) &amp;#xA;            {         &amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression1}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }  &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes1}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        } &amp;#xA;        &amp;#xA;        #Condition2 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition2Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition2}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression2}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes2}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;       &amp;#xA;        #Condition3 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition3Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition3}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression3}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes3}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition4 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition4Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition4}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression4}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes4}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition5 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition5Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition5}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression5}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes5}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        try&amp;#xA;        {         &amp;#xA;            {{{ExpressionDefault}}}&amp;#xA;        }&amp;#xA;        catch { if($__Error.CheckException($_.Exception.Message)) {return;} }&amp;#xA;&amp;#xA;        $__Error.Jump(&amp;quot;{{{connector-Default}}}&amp;quot;);&amp;#xA;        return;&amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_); &amp;#xA;        return;&amp;#xA;    } &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;                " TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="True" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="16"&gt;&lt;Property Name="Statement" Tooltip="[Любой тип] Сравниваемое выражение" CatalogName="Required" Type="Expression" Value="$Item" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="{x:Null}" Caption="Выражение" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Condition1" Tooltip="[Любой тип] Условие 1. При совпадении будет произведен выход по коннектору 1, а также выполнено выражение 1 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;универсальный&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression1" Tooltip="[Выражение] При выполнении условия 1 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\upd.json&amp;quot;;$doc_type=&amp;quot;УПД&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition2" Tooltip="[Любой тип] Условие 2. При совпадении будет произведен выход по коннектору 2, а также выполнено выражение 2 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Акт &amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression2" Tooltip="[Выражение] При выполнении условия 2 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\act.json&amp;quot;;$doc_type=&amp;quot;Акт&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition3" Tooltip="[Любой тип] Условие 3. При совпадении будет произведен выход по коннектору 3, а также выполнено выражение 3 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression3" Tooltip="[Выражение] При выполнении условия 3 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\t_n.json&amp;quot;;$doc_type=&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition4" Tooltip="[Любой тип] Условие 4. При совпадении будет произведен выход по коннектору 4, а также выполнено выражение 4 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;фактура&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression4" Tooltip="[Выражение] При выполнении условия 4 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\s_f.json&amp;quot;;$doc_type=&amp;quot;Счет-фактура&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition5" Tooltip="[Любой тип] Условие 5. При совпадении будет произведен выход по коннектору 5, а также выполнено выражение 5 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression5" Tooltip="[Выражение] При выполнении условия 5 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ExpressionDefault" Tooltip="[Выражение] Если ни одно из условий не будет выполнено, то будет выполнено данное выражение" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение по умолчанию" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="8"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Default" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000080" Caption="По умолчанию" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Yes1" Orientation="Right" RelativePosition="1,0" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="1" /&gt;&lt;ConnectorSettings Name="Yes2" Orientation="Right" RelativePosition="1,0.25" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="2" /&gt;&lt;ConnectorSettings Name="Yes3" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="3" /&gt;&lt;ConnectorSettings Name="Yes4" Orientation="Right" RelativePosition="1,0.75" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="4" /&gt;&lt;ConnectorSettings Name="Yes5" Orientation="Right" RelativePosition="1,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="5" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
+      <Content>&lt;ToolboxItemSettings DisplayName="Switch/Case" InternalName="SwitchCase" FriendlyName="Оператор switch сравнивает выражение с указанными значениями и выходит по указанному коннектору. Если совпадений не будет обнаружено, то выходит по коннектору &amp;quot;По умолчанию&amp;quot;" Width="100" Height="200" PathToImage="ExternalToolboxes\Image\icotb_If condition.png" PathToToolboxImage="ExternalToolboxes\Image\icotb_If condition.png" ImageType="TopImage" NoDelete="False" Invisible="False" Proportional="False" Version="42" LinuxAvailable="True" Code="&amp;#xA;function SwitchCase{{{block_id}}}&amp;#xA;{&amp;#xA;    try&amp;#xA;    {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;); &amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);&amp;#xA;   &amp;#xA;        #Condition1 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition1Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition1}}}) &amp;#xA;            {         &amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression1}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }  &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes1}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        } &amp;#xA;        &amp;#xA;        #Condition2 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition2Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition2}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression2}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes2}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;       &amp;#xA;        #Condition3 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition3Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition3}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression3}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes3}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition4 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition4Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition4}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression4}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes4}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        #Condition5 &amp;#xA;        $isCondition = $true;         &amp;#xA;        try { if({{{Condition5Length}}} -eq 0) { $isCondition = $false; } }&amp;#xA;        catch {}         &amp;#xA;        if($isCondition)&amp;#xA;        {&amp;#xA;            if ({{{Statement}}} -eq {{{Condition5}}}) &amp;#xA;            {&amp;#xA;                try&amp;#xA;                {         &amp;#xA;                    {{{Expression5}}}&amp;#xA;                }&amp;#xA;                catch { if($__Error.CheckException($_.Exception.Message)) {return;} }   &amp;#xA;                $strconn = &amp;quot;{{{connector-Yes5}}}&amp;quot;; &amp;#xA;                if($strconn.Length -gt 0) { $__Error.Jump($strconn); return; }&amp;#xA;                $__Error.Quit();&amp;#xA;                return;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        try&amp;#xA;        {         &amp;#xA;            {{{ExpressionDefault}}}&amp;#xA;        }&amp;#xA;        catch { if($__Error.CheckException($_.Exception.Message)) {return;} }&amp;#xA;&amp;#xA;        $__Error.Jump(&amp;quot;{{{connector-Default}}}&amp;quot;);&amp;#xA;        return;&amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_); &amp;#xA;        return;&amp;#xA;    } &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;                " TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,0L80,0 80,20 0,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="16"&gt;&lt;Property Name="Statement" Tooltip="[Любой тип] Сравниваемое выражение" CatalogName="Required" Type="Expression" Value="$Item" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="{x:Null}" Caption="Выражение" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Condition1" Tooltip="[Любой тип] Условие 1. При совпадении будет произведен выход по коннектору 1, а также выполнено выражение 1 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;универсальный&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression1" Tooltip="[Выражение] При выполнении условия 1 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\upd.json&amp;quot;;$doc_type=&amp;quot;УПД&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 1" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition2" Tooltip="[Любой тип] Условие 2. При совпадении будет произведен выход по коннектору 2, а также выполнено выражение 2 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Акт &amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression2" Tooltip="[Выражение] При выполнении условия 2 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\act.json&amp;quot;;$doc_type=&amp;quot;Акт&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 2" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition3" Tooltip="[Любой тип] Условие 3. При совпадении будет произведен выход по коннектору 3, а также выполнено выражение 3 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression3" Tooltip="[Выражение] При выполнении условия 3 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\t_n.json&amp;quot;;$doc_type=&amp;quot;Товарная накладная&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 3" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition4" Tooltip="[Любой тип] Условие 4. При совпадении будет произведен выход по коннектору 4, а также выполнено выражение 4 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="&amp;quot;фактура&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression4" Tooltip="[Выражение] При выполнении условия 4 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="$pattern=&amp;quot;patterns\s_f.json&amp;quot;;$doc_type=&amp;quot;Счет-фактура&amp;quot;" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 4" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Condition5" Tooltip="[Любой тип] Условие 5. При совпадении будет произведен выход по коннектору 5, а также выполнено выражение 5 если оно задано. Если коннектор не задан, то выход будет произведен по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="AnyDataType" EnumVariants="" Caption="Условие 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="Expression5" Tooltip="[Выражение] При выполнении условия 5 будет выполнено данное выражение и произведен выход по соответствующему коннектору. Если коннектор не подключен, то выход будет производится по умолчанию" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение 5" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ExpressionDefault" Tooltip="[Выражение] Если ни одно из условий не будет выполнено, то будет выполнено данное выражение" CatalogName="Main properties" Type="Expression" Value="" Visible="True" DefaultValue="" ValueType="Expression" EnumVariants="{x:Null}" Caption="Выполнить выражение по умолчанию" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="8"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Default" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000080" Caption="По умолчанию" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Yes1" Orientation="Right" RelativePosition="1,0" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="1" /&gt;&lt;ConnectorSettings Name="Yes2" Orientation="Right" RelativePosition="1,0.25" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="2" /&gt;&lt;ConnectorSettings Name="Yes3" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="3" /&gt;&lt;ConnectorSettings Name="Yes4" Orientation="Right" RelativePosition="1,0.75" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="4" /&gt;&lt;ConnectorSettings Name="Yes5" Orientation="Right" RelativePosition="1,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="5" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
     </DesignerItem>
     <DesignerItem>
       <Left>920</Left>
@@ -157,7 +157,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>e3fdae56-0a1f-4d94-9dc0-239608a6ad40</ID>
-      <zIndex>89</zIndex>
+      <zIndex>86</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -172,7 +172,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>5d374db5-02f1-46c9-899a-11206943bf26</ID>
-      <zIndex>77</zIndex>
+      <zIndex>74</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -202,7 +202,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>29cf3eb4-2165-4086-88a6-fe950f1bec28</ID>
-      <zIndex>79</zIndex>
+      <zIndex>76</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -262,7 +262,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>a66867d9-526e-40d5-b916-598d363dbe3a</ID>
-      <zIndex>68</zIndex>
+      <zIndex>65</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -277,7 +277,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>8b56e456-5f69-40cb-ba26-d4aba3917f10</ID>
-      <zIndex>66</zIndex>
+      <zIndex>63</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -292,7 +292,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>8860a110-8f76-4cdf-84b4-972baeb13ef5</ID>
-      <zIndex>69</zIndex>
+      <zIndex>66</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -442,7 +442,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>955641a5-ead3-4d90-92c2-3f22c161a62b</ID>
-      <zIndex>108</zIndex>
+      <zIndex>112</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -457,7 +457,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>6ea75c46-98a1-422c-9001-63c0cad28d30</ID>
-      <zIndex>110</zIndex>
+      <zIndex>104</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -472,7 +472,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>26994f74-eb71-4a13-b3bd-ed3fd415ca2d</ID>
-      <zIndex>112</zIndex>
+      <zIndex>106</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -487,7 +487,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>90ac9c1b-e462-4e5d-b0d1-edd81b983129</ID>
-      <zIndex>72</zIndex>
+      <zIndex>69</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -517,7 +517,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>d747e8d6-a7f1-4b22-b67f-f952fc24e912</ID>
-      <zIndex>71</zIndex>
+      <zIndex>68</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -569,7 +569,7 @@
       <IsPSVerified>true</IsPSVerified>
       <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
       <StorageSelectors></StorageSelectors>
-      <Content>&lt;ToolboxItemSettings DisplayName="Цикл Для каждого (Список)" InternalName="ForeachList" FriendlyName="Перебирает все элементы в заданном Списке, в каждой итерации цикла присваивает текущий элемент переменной, которая указана в свойстве Элемент, а затем выполнение сценария продолжается в сторону выхода Элемент данного блока (в так называемое &amp;quot;тело цикла&amp;quot;). После перебора всех элементов списка выполнение сценария продолжается в сторону нижнего выхода блока. Не забудьте соединить выход последнего блока в теле цикла со входом данного блока" Width="150" Height="150" PathToImage="ExternalToolboxes\Image\icotb_Foreach simple.png" PathToToolboxImage="ExternalToolboxes\Image\icotb_Foreach.png" ImageType="TopImageDock" NoDelete="False" Invisible="False" Proportional="True" Version="43" LinuxAvailable="True" Code="&amp;#xA;function ForeachList{{{block_id}}}&amp;#xA;{     &amp;#xA; try&amp;#xA; {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;); &amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;); &amp;#xA;    &amp;#xA;        if($script:__FuncIndex -gt $script:__LastFuncIndex) &amp;#xA;        { &amp;#xA;            $script:__Index{{{block_id}}} = 0; &amp;#xA;            $script:__FromOne{{{block_id}}} = $false;&amp;#xA;            $script:__Items{{{block_id}}} = {{{Items}}};&amp;#xA;        }&amp;#xA;             &amp;#xA;        if ($script:__Index{{{block_id}}} -lt $script:__Items{{{block_id}}}.Count)&amp;#xA;        {     &amp;#xA;            $currentindex = $script:__Index{{{block_id}}};&amp;#xA;            if($script:__FromOne{{{block_id}}}) { $currentindex++; }&amp;#xA;            try { {{{Item}}} = $script:__Items{{{block_id}}}[$currentindex]; }&amp;#xA;            catch&amp;#xA;            {&amp;#xA;                if($currentindex -eq 0)&amp;#xA;                {&amp;#xA;                    $currentindex = 1;&amp;#xA;                    {{{Item}}} = $script:__Items{{{block_id}}}[$currentindex];&amp;#xA;                    $script:__FromOne{{{block_id}}} = $true;&amp;#xA;                }&amp;#xA;            }     &amp;#xA;            {{{ItemIndex}}} = $script:__Index{{{block_id}}};&amp;#xA;            $script:__Index{{{block_id}}} = $script:__Index{{{block_id}}} + 1;&amp;#xA;                &amp;#xA;            $__Error.Jump(&amp;quot;{{{connector-Item}}}&amp;quot;);&amp;#xA;            return;&amp;#xA;        } &amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_); &amp;#xA;        return;&amp;#xA;    }&amp;#xA;    $script:__Index{{{block_id}}} = 0; &amp;#xA;    $script:__FromOne{{{block_id}}} = $false;&amp;#xA;    $script:__Items{{{block_id}}} = $null;&amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;" TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="True" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="8"&gt;&lt;Property Name="Items" Tooltip="[Список] Список, элементы которого необходимо перебрать в цикле" CatalogName="Required" Type="Expression" Value="$Items" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="List" EnumVariants="" Caption="Список" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Item" Tooltip="[Объект] Переменная, которой будет присвоен текущий элемент списка при каждом проходе цикла" CatalogName="Output" Type="Variable" Value="$Item" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Object" EnumVariants="" Caption="Элемент" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ItemIndex" Tooltip="[Число] Порядковый номер элемента. Нумерация начинается с нуля" CatalogName="Output" Type="Variable" Value="$ItemIndex" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Number" EnumVariants="" Caption="Индекс элемента" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Item" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="Элемент" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Next" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000000" Caption="" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
+      <Content>&lt;ToolboxItemSettings DisplayName="Цикл Для каждого (Список)" InternalName="ForeachList" FriendlyName="Перебирает все элементы в заданном Списке, в каждой итерации цикла присваивает текущий элемент переменной, которая указана в свойстве Элемент, а затем выполнение сценария продолжается в сторону выхода Элемент данного блока (в так называемое &amp;quot;тело цикла&amp;quot;). После перебора всех элементов списка выполнение сценария продолжается в сторону нижнего выхода блока. Не забудьте соединить выход последнего блока в теле цикла со входом данного блока" Width="150" Height="150" PathToImage="ExternalToolboxes\Image\icotb_Foreach simple.png" PathToToolboxImage="ExternalToolboxes\Image\icotb_Foreach.png" ImageType="TopImageDock" NoDelete="False" Invisible="False" Proportional="True" Version="43" LinuxAvailable="True" Code="&amp;#xA;function ForeachList{{{block_id}}}&amp;#xA;{     &amp;#xA; try&amp;#xA; {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;); &amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;); &amp;#xA;    &amp;#xA;        if($script:__FuncIndex -gt $script:__LastFuncIndex) &amp;#xA;        { &amp;#xA;            $script:__Index{{{block_id}}} = 0; &amp;#xA;            $script:__FromOne{{{block_id}}} = $false;&amp;#xA;            $script:__Items{{{block_id}}} = {{{Items}}};&amp;#xA;        }&amp;#xA;             &amp;#xA;        if ($script:__Index{{{block_id}}} -lt $script:__Items{{{block_id}}}.Count)&amp;#xA;        {     &amp;#xA;            $currentindex = $script:__Index{{{block_id}}};&amp;#xA;            if($script:__FromOne{{{block_id}}}) { $currentindex++; }&amp;#xA;            try { {{{Item}}} = $script:__Items{{{block_id}}}[$currentindex]; }&amp;#xA;            catch&amp;#xA;            {&amp;#xA;                if($currentindex -eq 0)&amp;#xA;                {&amp;#xA;                    $currentindex = 1;&amp;#xA;                    {{{Item}}} = $script:__Items{{{block_id}}}[$currentindex];&amp;#xA;                    $script:__FromOne{{{block_id}}} = $true;&amp;#xA;                }&amp;#xA;            }     &amp;#xA;            {{{ItemIndex}}} = $script:__Index{{{block_id}}};&amp;#xA;            $script:__Index{{{block_id}}} = $script:__Index{{{block_id}}} + 1;&amp;#xA;                &amp;#xA;            $__Error.Jump(&amp;quot;{{{connector-Item}}}&amp;quot;);&amp;#xA;            return;&amp;#xA;        } &amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_); &amp;#xA;        return;&amp;#xA;    }&amp;#xA;    $script:__Index{{{block_id}}} = 0; &amp;#xA;    $script:__FromOne{{{block_id}}} = $false;&amp;#xA;    $script:__Items{{{block_id}}} = $null;&amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;" TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF41B1E1&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="8"&gt;&lt;Property Name="Items" Tooltip="[Список] Список, элементы которого необходимо перебрать в цикле" CatalogName="Required" Type="Expression" Value="$Items" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="List" EnumVariants="" Caption="Список" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="Item" Tooltip="[Объект] Переменная, которой будет присвоен текущий элемент списка при каждом проходе цикла" CatalogName="Output" Type="Variable" Value="$Item" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Object" EnumVariants="" Caption="Элемент" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ItemIndex" Tooltip="[Число] Порядковый номер элемента. Нумерация начинается с нуля" CatalogName="Output" Type="Variable" Value="$ItemIndex" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Number" EnumVariants="" Caption="Индекс элемента" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Item" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="Элемент" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Next" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF000000" Caption="" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
     </DesignerItem>
     <DesignerItem>
       <Left>405</Left>
@@ -577,7 +577,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>464ee295-5b38-4daa-b867-4882ff4c5392</ID>
-      <zIndex>63</zIndex>
+      <zIndex>108</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -622,7 +622,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>87ad6c1e-d4d4-4060-a552-9c0d4bd81c4d</ID>
-      <zIndex>90</zIndex>
+      <zIndex>110</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -637,7 +637,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>d14c26cd-013f-4eea-b847-be750b0f3138</ID>
-      <zIndex>75</zIndex>
+      <zIndex>72</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -667,7 +667,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>a97ba456-f8f7-41f5-95d7-48dcf4e8a117</ID>
-      <zIndex>102</zIndex>
+      <zIndex>98</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -682,7 +682,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>591cb15d-55bc-4fbb-8994-ef8cf8b7f276</ID>
-      <zIndex>93</zIndex>
+      <zIndex>89</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -697,7 +697,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>7e7dcdf4-b339-4a70-8fc7-217161ba9c58</ID>
-      <zIndex>95</zIndex>
+      <zIndex>91</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -712,7 +712,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>73975893-59f8-45cb-8b37-6ed20df9f088</ID>
-      <zIndex>101</zIndex>
+      <zIndex>97</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -727,7 +727,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>b42c4c74-09c1-462f-81cb-bf97dda1a83b</ID>
-      <zIndex>98</zIndex>
+      <zIndex>94</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -742,7 +742,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>22cf08b0-12a3-45d2-a65a-03edffb5f87f</ID>
-      <zIndex>107</zIndex>
+      <zIndex>103</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -757,7 +757,7 @@
       <Width>70</Width>
       <Height>70</Height>
       <ID>90939fda-893a-48da-b95b-c7017e319381</ID>
-      <zIndex>99</zIndex>
+      <zIndex>95</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -772,7 +772,7 @@
       <Width>20</Width>
       <Height>20</Height>
       <ID>dfacfb33-7a66-4367-aa7c-750ba9e66d40</ID>
-      <zIndex>91</zIndex>
+      <zIndex>87</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -826,7 +826,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>85</zIndex>
+      <zIndex>82</zIndex>
     </Connection>
     <Connection>
       <SourceID>fb31a74f-e4b3-4a25-897e-256f65fbffa5</SourceID>
@@ -835,7 +835,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>86</zIndex>
+      <zIndex>83</zIndex>
     </Connection>
     <Connection>
       <SourceID>82ed0ee0-3cfd-4cfc-9041-09b8024dd241</SourceID>
@@ -853,7 +853,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>78</zIndex>
+      <zIndex>75</zIndex>
     </Connection>
     <Connection>
       <SourceID>29cf3eb4-2165-4086-88a6-fe950f1bec28</SourceID>
@@ -925,7 +925,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>67</zIndex>
+      <zIndex>64</zIndex>
     </Connection>
     <Connection>
       <SourceID>8c23b28a-52a1-44c8-a634-f75e0a850896</SourceID>
@@ -934,7 +934,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>82</zIndex>
+      <zIndex>79</zIndex>
     </Connection>
     <Connection>
       <SourceID>9353b5e0-1eab-4b08-a9b3-881651d8f177</SourceID>
@@ -1024,7 +1024,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>111</zIndex>
+      <zIndex>105</zIndex>
     </Connection>
     <Connection>
       <SourceID>6ea75c46-98a1-422c-9001-63c0cad28d30</SourceID>
@@ -1033,7 +1033,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>109</zIndex>
+      <zIndex>113</zIndex>
     </Connection>
     <Connection>
       <SourceID>955641a5-ead3-4d90-92c2-3f22c161a62b</SourceID>
@@ -1042,7 +1042,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>70</zIndex>
+      <zIndex>67</zIndex>
     </Connection>
     <Connection>
       <SourceID>8b56e456-5f69-40cb-ba26-d4aba3917f10</SourceID>
@@ -1069,7 +1069,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>76</zIndex>
+      <zIndex>73</zIndex>
     </Connection>
     <Connection>
       <SourceID>d747e8d6-a7f1-4b22-b67f-f952fc24e912</SourceID>
@@ -1078,7 +1078,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>73</zIndex>
+      <zIndex>70</zIndex>
     </Connection>
     <Connection>
       <SourceID>2ed3667c-154a-4cb4-b286-1c8dab4afa82</SourceID>
@@ -1141,7 +1141,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>64</zIndex>
+      <zIndex>109</zIndex>
     </Connection>
     <Connection>
       <SourceID>ac30f5d5-2336-4505-8747-6453825765ff</SourceID>
@@ -1204,7 +1204,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>81</zIndex>
+      <zIndex>78</zIndex>
     </Connection>
     <Connection>
       <SourceID>f673c0c4-10b0-4068-8abf-4d0c9a9047da</SourceID>
@@ -1222,7 +1222,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>65</zIndex>
+      <zIndex>111</zIndex>
     </Connection>
     <Connection>
       <SourceID>d14c26cd-013f-4eea-b847-be750b0f3138</SourceID>
@@ -1240,7 +1240,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>74</zIndex>
+      <zIndex>71</zIndex>
     </Connection>
     <Connection>
       <SourceID>f5bb1b35-335c-4ae5-9dca-c90a14621ec8</SourceID>
@@ -1258,7 +1258,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>92</zIndex>
+      <zIndex>88</zIndex>
     </Connection>
     <Connection>
       <SourceID>7e7dcdf4-b339-4a70-8fc7-217161ba9c58</SourceID>
@@ -1267,7 +1267,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>96</zIndex>
+      <zIndex>92</zIndex>
     </Connection>
     <Connection>
       <SourceID>b42c4c74-09c1-462f-81cb-bf97dda1a83b</SourceID>
@@ -1276,7 +1276,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>97</zIndex>
+      <zIndex>93</zIndex>
     </Connection>
     <Connection>
       <SourceID>591cb15d-55bc-4fbb-8994-ef8cf8b7f276</SourceID>
@@ -1285,7 +1285,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>94</zIndex>
+      <zIndex>90</zIndex>
     </Connection>
     <Connection>
       <SourceID>22cf08b0-12a3-45d2-a65a-03edffb5f87f</SourceID>
@@ -1294,7 +1294,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>103</zIndex>
+      <zIndex>99</zIndex>
     </Connection>
     <Connection>
       <SourceID>8c23b28a-52a1-44c8-a634-f75e0a850896</SourceID>
@@ -1303,7 +1303,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>83</zIndex>
+      <zIndex>80</zIndex>
     </Connection>
     <Connection>
       <SourceID>73975893-59f8-45cb-8b37-6ed20df9f088</SourceID>
@@ -1312,7 +1312,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>100</zIndex>
+      <zIndex>96</zIndex>
     </Connection>
     <Connection>
       <SourceID>22cf08b0-12a3-45d2-a65a-03edffb5f87f</SourceID>
@@ -1321,7 +1321,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>105</zIndex>
+      <zIndex>101</zIndex>
     </Connection>
     <Connection>
       <SourceID>dfacfb33-7a66-4367-aa7c-750ba9e66d40</SourceID>
@@ -1330,7 +1330,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>106</zIndex>
+      <zIndex>102</zIndex>
     </Connection>
     <Connection>
       <SourceID>26994f74-eb71-4a13-b3bd-ed3fd415ca2d</SourceID>
@@ -1339,17 +1339,26 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>113</zIndex>
+      <zIndex>107</zIndex>
+    </Connection>
+    <Connection>
+      <SourceID>6ea75c46-98a1-422c-9001-63c0cad28d30</SourceID>
+      <SinkID>8860a110-8f76-4cdf-84b4-972baeb13ef5</SinkID>
+      <SourceConnectorName>Error</SourceConnectorName>
+      <SinkConnectorName>Input</SinkConnectorName>
+      <SourceArrowSymbol>None</SourceArrowSymbol>
+      <SinkArrowSymbol>Arrow</SinkArrowSymbol>
+      <zIndex>114</zIndex>
     </Connection>
   </Connections>
   <Properties>
     <DiagramProperty Name="check_list" Type="List" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAEAQAAAH9TeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24GAAAICAkCAAAABAAAAAQAAAARAgAAAAQAAAAGAwAAABrRg9C90LjQstC10YDRgdCw0LvRjNC90YvQuQYEAAAAB9CQ0LrRgiAGBQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjwYGAAAADtGE0LDQutGC0YPRgNCwCw==" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAH9TeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW1N5c3RlbS5TdHJpbmcsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24GAAAICAkCAAAABAAAAAQAAAARAgAAAAQAAAAGAwAAABrRg9C90LjQstC10YDRgdCw0LvRjNC90YvQuQYEAAAAB9CQ0LrRgiAGBQAAACPQotC+0LLQsNGA0L3QsNGPINC90LDQutC70LDQtNC90LDRjwYGAAAADtGE0LDQutGC0YPRgNCwCw==" />
-    <DiagramProperty Name="pattern" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" />
-    <DiagramProperty Name="doc_type" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" />
-    <DiagramProperty Name="line_index" Type="Number" IsGlobal="False" DefaultValue="2" Value="2" />
-    <DiagramProperty Name="row_index" Type="Number" IsGlobal="False" DefaultValue="1" Value="1" />
-    <DiagramProperty Name="date" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" />
-    <DiagramProperty Name="number" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" />
-    <DiagramProperty Name="Value" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAACsiDQoNCuKEliAyINC+0YIgMTUg0LTQtdC60LDQsdGA0Y8gMjAyMyDQsy4iCw==" Value="AAEAAAD/////AQAAAAAAAAAGAQAAACsiDQoNCuKEliAyINC+0YIgMTUg0LTQtdC60LDQsdGA0Y8gMjAyMyDQsy4iCw==" />
+    <DiagramProperty Name="pattern" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAABFwYXR0ZXJuc1x1cGQuanNvbgs=" />
+    <DiagramProperty Name="doc_type" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAbQo9Cf0JQL" />
+    <DiagramProperty Name="line_index" Type="Number" IsGlobal="False" DefaultValue="2" Value="8" />
+    <DiagramProperty Name="row_index" Type="Number" IsGlobal="False" DefaultValue="1" Value="5" />
+    <DiagramProperty Name="date" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAowMS4xMi4yMDIzCw==" />
+    <DiagramProperty Name="number" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAAIyMgs=" />
+    <DiagramProperty Name="Value" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAACsiDQoNCuKEliAyINC+0YIgMTUg0LTQtdC60LDQsdGA0Y8gMjAyMyDQsy4iCw==" Value="AAEAAAD/////AQAAAAAAAAAGAQAAALoB4oSWIDIyINC+0YIgMDEg0LTQtdC60LDQsdGA0Y8gMjAyMyDQsy4g0J/RgNC40LvQvtC20LXQvdC40LUg4oSWIDEg0Log0L/QvtGB0YLQsNC90L7QstC70LXQvdC40Y4g0J/RgNCw0LLQuNGC0LXQu9GM0YHRgtCy0LAg0KDQvtGB0YHQuNC50YHQutC+0Lkg0KTQtdC00LXRgNCw0YbQuNC4INC+0YIgMjYuMTIuMjAxMSDihJYxMTM3Cw==" />
   </Properties>
 </Root>

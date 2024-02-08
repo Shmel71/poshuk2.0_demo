@@ -112,7 +112,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>fc12af35-9e9d-46f9-9761-1802ee663b62</ID>
-      <zIndex>81</zIndex>
+      <zIndex>77</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -142,7 +142,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>04de2a54-ffc7-4a57-9c9a-77c3c31b6c7f</ID>
-      <zIndex>77</zIndex>
+      <zIndex>73</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -322,7 +322,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>008536e0-186d-4196-9fd4-f74a93922a1c</ID>
-      <zIndex>79</zIndex>
+      <zIndex>75</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -337,7 +337,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>7170ac7d-680f-4ab7-a9ff-1a3b29209417</ID>
-      <zIndex>95</zIndex>
+      <zIndex>105</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -457,7 +457,7 @@
       <Width>200</Width>
       <Height>75</Height>
       <ID>c20051bf-4940-4ecc-9a71-6741f78c6d57</ID>
-      <zIndex>91</zIndex>
+      <zIndex>96</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -472,7 +472,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>72eca828-de90-4fb1-8d62-cd4e356cca1c</ID>
-      <zIndex>98</zIndex>
+      <zIndex>93</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -487,14 +487,14 @@
       <Width>150</Width>
       <Height>150</Height>
       <ID>0fe0cbb6-f0cc-4d9a-a1cb-a388ed7951c1</ID>
-      <zIndex>85</zIndex>
+      <zIndex>102</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
       <IsPSVerified>true</IsPSVerified>
       <ParentID>00000000-0000-0000-0000-000000000000</ParentID>
       <StorageSelectors></StorageSelectors>
-      <Content>&lt;ToolboxItemSettings DisplayName="Найти подстроку в тексте" InternalName="ContainsString" FriendlyName="Найти подстроку в тексте" Width="150" Height="150" PathToImage="ExternalToolboxes\Image\ico_Texts.png" PathToToolboxImage="{x:Null}" ImageType="NoImage" NoDelete="False" Invisible="False" Proportional="True" Version="162" LinuxAvailable="True" Code="&amp;#xA;function ContainsString{{{block_id}}}&amp;#xA;{&amp;#xA;    try&amp;#xA;    {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;);&amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);&amp;#xA;                     &amp;#xA;    $InString      = {{{InString}}};&amp;#xA;    $StartIndex    = {{{StartIndex}}};&amp;#xA;    $SubString     = {{{SubString}}}; &amp;#xA;    $WholeWord     = ${{{WholeWord}}};&amp;#xA;    $CheckType     = &amp;quot;{{{CheckType}}}&amp;quot;; &amp;#xA;    $ReverseCheck  = ${{{ReverseCheck}}}; &amp;#xA;    $UseWildcard   = ${{{UseWildcard}}};&amp;#xA;    $CaseSensitive = ${{{CaseSensitive}}};&amp;#xA;    &amp;#xA;        $str1 = $InString.ToString(); &amp;#xA;        if(!$CaseSensitive) { $str1 = $str1.ToLower(); }&amp;#xA;        &amp;#xA;        $liststr = New-Object Collections.Generic.List[string];&amp;#xA;        &amp;#xA;        $vartype = $SubString.GetType().Name;&amp;#xA;        &amp;#xA;        if($vartype.Contains(&amp;quot;List&amp;quot;) -or $vartype.Contains(&amp;quot;[]&amp;quot;))&amp;#xA;        {        &amp;#xA;            foreach($s in $SubString)&amp;#xA;            {       &amp;#xA;                $_str = $s.ToString();&amp;#xA;                if($_str.Length -gt 0) { $liststr.Add($_str); }&amp;#xA;            }&amp;#xA;        }&amp;#xA;        else&amp;#xA;        {&amp;#xA;            $_str = $SubString.ToString(); &amp;#xA;            if($_str.Length -gt 0) { $liststr.Add($_str); }&amp;#xA;        }  &amp;#xA;&amp;#xA;        $IncludeClosestOneIndex  = [int]::MaxValue;&amp;#xA;        $IncludeClosestOneString = &amp;quot;&amp;quot;;&amp;#xA;            &amp;#xA;        $countsuccess = 0;&amp;#xA;        $issuccess    = $true;        &amp;#xA;        if($UseWildcard)&amp;#xA;        {  &amp;#xA;            $cls = [MainHelpers.ClassWildcard]::new();&amp;#xA;            &amp;#xA;            foreach($ssstr2 in $liststr)&amp;#xA;            {           &amp;#xA;                $str2 = $ssstr2;&amp;#xA;                if(!$CaseSensitive) { $str2 = $str2.ToLower(); }&amp;#xA;                $result = $cls.IndexOf($str1, $str2, $StartIndex, $WholeWord, $ReverseCheck, $CaseSensitive);&amp;#xA;                          &amp;#xA;                {{{FindIndex}}} = $result.FindIndex; &amp;#xA;                {{{FindString}}} = $result.FindString; &amp;#xA;                &amp;#xA;                if($result.Success)&amp;#xA;                {            &amp;#xA;                    if($CheckType -eq &amp;quot;IncludeClosestOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        if($result.FindIndex -lt $IncludeClosestOneIndex)&amp;#xA;                        {&amp;#xA;                            $IncludeClosestOneIndex  = $result.FindIndex;&amp;#xA;                            $IncludeClosestOneString = $result.FindString;&amp;#xA;                        } &amp;#xA;                        continue;&amp;#xA;                    }&amp;#xA;                    &amp;#xA;                    $countsuccess++;&amp;#xA;                    if($CheckType -eq &amp;quot;IncludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Exclude&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                }&amp;#xA;                else&amp;#xA;                {   &amp;#xA;                    if($CheckType -eq &amp;quot;ExcludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Include&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                } &amp;#xA;            }&amp;#xA;        }&amp;#xA;        else&amp;#xA;        {      &amp;#xA;            $_stindex = 0;&amp;#xA;            [int]::TryParse([string]$StartIndex, [ref] $_stindex);&amp;#xA;            if($_stindex -gt $str1.Length) { $_stindex = $str1.Length - 1; }&amp;#xA;            foreach($ssstr2 in $liststr)&amp;#xA;            {           &amp;#xA;                $str2 = $ssstr2;&amp;#xA;                if(!$CaseSensitive) { $str2 = $str2.ToLower(); }&amp;#xA;                $result = $str1.IndexOf($str2, $_stindex);&amp;#xA;                          &amp;#xA;                {{{FindIndex}}} = $result; &amp;#xA;                {{{FindString}}} = $str2; &amp;#xA;                &amp;#xA;                if($result -ge 0)&amp;#xA;                {          &amp;#xA;                    if($CheckType -eq &amp;quot;IncludeClosestOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        if($result -lt $IncludeClosestOneIndex)&amp;#xA;                        {&amp;#xA;                            $IncludeClosestOneIndex  = $result;&amp;#xA;                            $IncludeClosestOneString = $str2;&amp;#xA;                        } &amp;#xA;                        continue;&amp;#xA;                    }&amp;#xA;                    &amp;#xA;                    $countsuccess++;&amp;#xA;                    if($CheckType -eq &amp;quot;IncludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Exclude&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                }&amp;#xA;                else&amp;#xA;                {   &amp;#xA;                    if($CheckType -eq &amp;quot;ExcludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Include&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                } &amp;#xA;            }&amp;#xA;        } &amp;#xA;              &amp;#xA;        if($CheckType -eq &amp;quot;IncludeOne&amp;quot; -and $countsuccess -eq 0)&amp;#xA;        {&amp;#xA;            $issuccess = $false;&amp;#xA;        } &amp;#xA;        &amp;#xA;        if($CheckType -eq &amp;quot;IncludeClosestOne&amp;quot;)&amp;#xA;        {&amp;#xA;            if($IncludeClosestOneIndex  -eq [int]::MaxValue) { $issuccess = $false; }&amp;#xA;            else&amp;#xA;            {&amp;#xA;                {{{FindIndex}}} = $IncludeClosestOneIndex; &amp;#xA;                {{{FindString}}} = $IncludeClosestOneString;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        $__Error.Detailed(&amp;quot;Status: $issuccess&amp;quot;);&amp;#xA;&amp;#xA;        if($issuccess)&amp;#xA;        {&amp;#xA;            $__Error.Jump(&amp;quot;{{{connector-Yes}}}&amp;quot;);&amp;#xA;            return;&amp;#xA;        }&amp;#xA;        else &amp;#xA;        {&amp;#xA;            $__Error.Jump(&amp;quot;{{{connector-No}}}&amp;quot;);&amp;#xA;            return;&amp;#xA;        }&amp;#xA;        &amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_);&amp;#xA;        return;&amp;#xA;    } &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;" TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFF9B24&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFF9B24&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="16"&gt;&lt;Property Name="InString" Tooltip="[Текст] Входная строка" CatalogName="Required" Type="Expression" Value="$Result" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Текст" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="SubString" Tooltip="[Текст/Список] Искомая подстрока или список подстрок. Можно задать массив с помощью команды @(&amp;quot;text1&amp;quot;,&amp;quot;mes&amp;quot;)" CatalogName="Main properties" Type="Expression" Value="&amp;quot;ДОКУМЕНТ ПОДПИСАН&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text/List" EnumVariants="" Caption="Подстрока" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="StartIndex" Tooltip="[Число] Начальная позиция поиска. Нумерация начинается с 0. " CatalogName="Main properties" Type="Expression" Value="0" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Number" EnumVariants="" Caption="Индекс начала" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="WholeWord" Tooltip="При поиске будут учитываться границы слова. Например: при включенном свойстве значение &amp;quot;Value&amp;quot; будет найдено в тексте &amp;quot;This Value&amp;quot;, но не будет найдено в тексте &amp;quot;This ValueTest&amp;quot;. Если свойство будет выключено, то значение &amp;quot;Value&amp;quot; будет найдено в обоих примерах." CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Слово целиком" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="CheckType" Tooltip="Выбор типа проверки. Возможные значения: &amp;quot;Include&amp;quot; - все заданные подстроки должны присутствовать в строке; &amp;quot;Exclude&amp;quot; - все заданные подстроки не должны содержаться в строке; &amp;quot;IncludeOne&amp;quot; - если в тексте найдена хоть одна подстрока, то проверка успешна; &amp;quot;ExcludeOne&amp;quot; - если в тексте отсутсвует хоть одна подстрока, то проверка успешна; &amp;quot;IncludeClosestOne&amp;quot; - при указании списка значений проверка происходит по правилу &amp;quot;входит ближайший&amp;quot;" CatalogName="Main properties" Type="Enum" Value="Include" Visible="True" DefaultValue="" ValueType="" EnumVariants="Include;Exclude;IncludeOne;ExcludeOne;IncludeClosestOne" Caption="Тип проверки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReverseCheck" Tooltip="При проверке поменять местами входные значения &amp;quot;Текст&amp;quot; и &amp;quot;Подстрока&amp;quot;" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Обратная проверка" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="UseWildcard" Tooltip="Если включено, то будет использоваться проверка с использованием метасимволов (Wildcard). Например: &amp;quot;test*&amp;quot;, &amp;quot;te?t&amp;quot;. Если свойство выключено, то проверка будет проводится простым способом и происходить быстрее" CatalogName="Main properties" Type="Bool" Value="True" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Расширенная проверка" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="CaseSensitive" Tooltip="Если свойство включено, то при проверке будет учитываться регистр символов, иначе он будет игнорироваться" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Учитывать регистр" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="FindIndex" Tooltip="[Число] Возвращает индекс с отсчетом от нуля первого вхождения значения указанной строки" CatalogName="Output" Type="Variable" Value="$FoundIndex" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Number" EnumVariants="" Caption="Индекс строки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="FindString" Tooltip="[Текст] Возвращается значение найденной подстроки" CatalogName="Output" Type="Variable" Value="$FoundString" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Найденная строка" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Output" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="No" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FFFF0000" Caption="Нет" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Yes" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="Да" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
+      <Content>&lt;ToolboxItemSettings DisplayName="Найти подстроку в тексте" InternalName="ContainsString" FriendlyName="Найти подстроку в тексте" Width="150" Height="150" PathToImage="ExternalToolboxes\Image\ico_Texts.png" PathToToolboxImage="{x:Null}" ImageType="NoImage" NoDelete="False" Invisible="False" Proportional="True" Version="162" LinuxAvailable="True" Code="&amp;#xA;function ContainsString{{{block_id}}}&amp;#xA;{&amp;#xA;    try&amp;#xA;    {&amp;#xA;    $__Error.Enter(&amp;quot;{{{block_native_id}}}&amp;quot;, &amp;quot;{{{ErrorLevel}}}&amp;quot;,&amp;quot;{{{ErrorDirection}}}&amp;quot;,&amp;quot;{{{ReportLevel}}}&amp;quot;,&amp;quot;{{{ErrorMessage}}}&amp;quot;);&amp;#xA;    $__Error.AddConnectors(&amp;quot;{{{connector-Error}}}&amp;quot;, &amp;quot;{{{connectorRight}}}&amp;quot;, &amp;quot;{{{connectorBottom}}}&amp;quot;);&amp;#xA;                     &amp;#xA;    $InString      = {{{InString}}};&amp;#xA;    $StartIndex    = {{{StartIndex}}};&amp;#xA;    $SubString     = {{{SubString}}}; &amp;#xA;    $WholeWord     = ${{{WholeWord}}};&amp;#xA;    $CheckType     = &amp;quot;{{{CheckType}}}&amp;quot;; &amp;#xA;    $ReverseCheck  = ${{{ReverseCheck}}}; &amp;#xA;    $UseWildcard   = ${{{UseWildcard}}};&amp;#xA;    $CaseSensitive = ${{{CaseSensitive}}};&amp;#xA;    &amp;#xA;        $str1 = $InString.ToString(); &amp;#xA;        if(!$CaseSensitive) { $str1 = $str1.ToLower(); }&amp;#xA;        &amp;#xA;        $liststr = New-Object Collections.Generic.List[string];&amp;#xA;        &amp;#xA;        $vartype = $SubString.GetType().Name;&amp;#xA;        &amp;#xA;        if($vartype.Contains(&amp;quot;List&amp;quot;) -or $vartype.Contains(&amp;quot;[]&amp;quot;))&amp;#xA;        {        &amp;#xA;            foreach($s in $SubString)&amp;#xA;            {       &amp;#xA;                $_str = $s.ToString();&amp;#xA;                if($_str.Length -gt 0) { $liststr.Add($_str); }&amp;#xA;            }&amp;#xA;        }&amp;#xA;        else&amp;#xA;        {&amp;#xA;            $_str = $SubString.ToString(); &amp;#xA;            if($_str.Length -gt 0) { $liststr.Add($_str); }&amp;#xA;        }  &amp;#xA;&amp;#xA;        $IncludeClosestOneIndex  = [int]::MaxValue;&amp;#xA;        $IncludeClosestOneString = &amp;quot;&amp;quot;;&amp;#xA;            &amp;#xA;        $countsuccess = 0;&amp;#xA;        $issuccess    = $true;        &amp;#xA;        if($UseWildcard)&amp;#xA;        {  &amp;#xA;            $cls = [MainHelpers.ClassWildcard]::new();&amp;#xA;            &amp;#xA;            foreach($ssstr2 in $liststr)&amp;#xA;            {           &amp;#xA;                $str2 = $ssstr2;&amp;#xA;                if(!$CaseSensitive) { $str2 = $str2.ToLower(); }&amp;#xA;                $result = $cls.IndexOf($str1, $str2, $StartIndex, $WholeWord, $ReverseCheck, $CaseSensitive);&amp;#xA;                          &amp;#xA;                {{{FindIndex}}} = $result.FindIndex; &amp;#xA;                {{{FindString}}} = $result.FindString; &amp;#xA;                &amp;#xA;                if($result.Success)&amp;#xA;                {            &amp;#xA;                    if($CheckType -eq &amp;quot;IncludeClosestOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        if($result.FindIndex -lt $IncludeClosestOneIndex)&amp;#xA;                        {&amp;#xA;                            $IncludeClosestOneIndex  = $result.FindIndex;&amp;#xA;                            $IncludeClosestOneString = $result.FindString;&amp;#xA;                        } &amp;#xA;                        continue;&amp;#xA;                    }&amp;#xA;                    &amp;#xA;                    $countsuccess++;&amp;#xA;                    if($CheckType -eq &amp;quot;IncludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Exclude&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                }&amp;#xA;                else&amp;#xA;                {   &amp;#xA;                    if($CheckType -eq &amp;quot;ExcludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Include&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                } &amp;#xA;            }&amp;#xA;        }&amp;#xA;        else&amp;#xA;        {      &amp;#xA;            $_stindex = 0;&amp;#xA;            [int]::TryParse([string]$StartIndex, [ref] $_stindex);&amp;#xA;            if($_stindex -gt $str1.Length) { $_stindex = $str1.Length - 1; }&amp;#xA;            foreach($ssstr2 in $liststr)&amp;#xA;            {           &amp;#xA;                $str2 = $ssstr2;&amp;#xA;                if(!$CaseSensitive) { $str2 = $str2.ToLower(); }&amp;#xA;                $result = $str1.IndexOf($str2, $_stindex);&amp;#xA;                          &amp;#xA;                {{{FindIndex}}} = $result; &amp;#xA;                {{{FindString}}} = $str2; &amp;#xA;                &amp;#xA;                if($result -ge 0)&amp;#xA;                {          &amp;#xA;                    if($CheckType -eq &amp;quot;IncludeClosestOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        if($result -lt $IncludeClosestOneIndex)&amp;#xA;                        {&amp;#xA;                            $IncludeClosestOneIndex  = $result;&amp;#xA;                            $IncludeClosestOneString = $str2;&amp;#xA;                        } &amp;#xA;                        continue;&amp;#xA;                    }&amp;#xA;                    &amp;#xA;                    $countsuccess++;&amp;#xA;                    if($CheckType -eq &amp;quot;IncludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Exclude&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                }&amp;#xA;                else&amp;#xA;                {   &amp;#xA;                    if($CheckType -eq &amp;quot;ExcludeOne&amp;quot;)&amp;#xA;                    {&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                    if($CheckType -eq &amp;quot;Include&amp;quot;)&amp;#xA;                    {&amp;#xA;                        $issuccess = $false;&amp;#xA;                        break;&amp;#xA;                    }&amp;#xA;                } &amp;#xA;            }&amp;#xA;        } &amp;#xA;              &amp;#xA;        if($CheckType -eq &amp;quot;IncludeOne&amp;quot; -and $countsuccess -eq 0)&amp;#xA;        {&amp;#xA;            $issuccess = $false;&amp;#xA;        } &amp;#xA;        &amp;#xA;        if($CheckType -eq &amp;quot;IncludeClosestOne&amp;quot;)&amp;#xA;        {&amp;#xA;            if($IncludeClosestOneIndex  -eq [int]::MaxValue) { $issuccess = $false; }&amp;#xA;            else&amp;#xA;            {&amp;#xA;                {{{FindIndex}}} = $IncludeClosestOneIndex; &amp;#xA;                {{{FindString}}} = $IncludeClosestOneString;&amp;#xA;            }&amp;#xA;        }&amp;#xA;        &amp;#xA;        $__Error.Detailed(&amp;quot;Status: $issuccess&amp;quot;);&amp;#xA;&amp;#xA;        if($issuccess)&amp;#xA;        {&amp;#xA;            $__Error.Jump(&amp;quot;{{{connector-Yes}}}&amp;quot;);&amp;#xA;            return;&amp;#xA;        }&amp;#xA;        else &amp;#xA;        {&amp;#xA;            $__Error.Jump(&amp;quot;{{{connector-No}}}&amp;quot;);&amp;#xA;            return;&amp;#xA;        }&amp;#xA;        &amp;#xA;    }&amp;#xA;    catch &amp;#xA;    { &amp;#xA;        $__Error.ExceptionCatch($_);&amp;#xA;        return;&amp;#xA;    } &amp;#xA;    $__Error.Quit();&amp;#xA;}&amp;#xA;" TextColor="#FFDADADA" ProtoName="" Language="" UrlVideo="{x:Null}" DerivedFrom="" NoResize="False" Container="False" MouseOverColor="Gray" MouseOverFill="Transparent" IsExpressionOnPause="False" ExpressionOnPause="" IsCollapsedBlock="False" Breakpoint="False" DirivedFrom="" xmlns="clr-namespace:ToolboxDesigner.Core;assembly=DiagramDesigner" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;&lt;ToolboxItemSettings.PathStyle&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FF252525&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFF9B24&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle&gt;&lt;ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.BasedOn&gt;&lt;av:Style TargetType="av:Path"&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#FFFF9B24&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeThickness"&gt;&lt;av:Setter.Value&gt;&lt;s:Double&gt;2&lt;/s:Double&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.StrokeLineJoin"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:PenLineJoin.Round" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stretch"&gt;&lt;av:Setter.Value&gt;&lt;x:Static Member="av:Stretch.Fill" /&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;False&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:UIElement.SnapsToDevicePixels"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:Path.Data"&gt;&lt;av:Setter.Value&gt;&lt;av:StreamGeometry&gt;M0,10L20,0 40,10 20,20z&lt;/av:StreamGeometry&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/av:Style.BasedOn&gt;&lt;av:Style.Resources&gt;&lt;av:ResourceDictionary /&gt;&lt;/av:Style.Resources&gt;&lt;av:Setter Property="av:UIElement.IsHitTestVisible"&gt;&lt;av:Setter.Value&gt;&lt;s:Boolean&gt;True&lt;/s:Boolean&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Fill"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;av:Setter Property="av:Shape.Stroke"&gt;&lt;av:Setter.Value&gt;&lt;av:SolidColorBrush&gt;#00FFFFFF&lt;/av:SolidColorBrush&gt;&lt;/av:Setter.Value&gt;&lt;/av:Setter&gt;&lt;/av:Style&gt;&lt;/ToolboxItemSettings.PathStyle_DragThumb&gt;&lt;ToolboxItemSettings.Properties&gt;&lt;PropertiesCollection Capacity="16"&gt;&lt;Property Name="InString" Tooltip="[Текст] Входная строка" CatalogName="Required" Type="Expression" Value="$Result" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Текст" ProtoName="" ReadOnly="False" IsRequired="True" IsPSVerified="True" /&gt;&lt;Property Name="SubString" Tooltip="[Текст/Список] Искомая подстрока или список подстрок. Можно задать массив с помощью команды @(&amp;quot;text1&amp;quot;,&amp;quot;mes&amp;quot;)" CatalogName="Main properties" Type="Expression" Value="&amp;quot;ДОКУМЕНТ&amp;quot;" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text/List" EnumVariants="" Caption="Подстрока" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="StartIndex" Tooltip="[Число] Начальная позиция поиска. Нумерация начинается с 0. " CatalogName="Main properties" Type="Expression" Value="0" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Number" EnumVariants="" Caption="Индекс начала" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="WholeWord" Tooltip="При поиске будут учитываться границы слова. Например: при включенном свойстве значение &amp;quot;Value&amp;quot; будет найдено в тексте &amp;quot;This Value&amp;quot;, но не будет найдено в тексте &amp;quot;This ValueTest&amp;quot;. Если свойство будет выключено, то значение &amp;quot;Value&amp;quot; будет найдено в обоих примерах." CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Слово целиком" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="CheckType" Tooltip="Выбор типа проверки. Возможные значения: &amp;quot;Include&amp;quot; - все заданные подстроки должны присутствовать в строке; &amp;quot;Exclude&amp;quot; - все заданные подстроки не должны содержаться в строке; &amp;quot;IncludeOne&amp;quot; - если в тексте найдена хоть одна подстрока, то проверка успешна; &amp;quot;ExcludeOne&amp;quot; - если в тексте отсутсвует хоть одна подстрока, то проверка успешна; &amp;quot;IncludeClosestOne&amp;quot; - при указании списка значений проверка происходит по правилу &amp;quot;входит ближайший&amp;quot;" CatalogName="Main properties" Type="Enum" Value="Include" Visible="True" DefaultValue="" ValueType="" EnumVariants="Include;Exclude;IncludeOne;ExcludeOne;IncludeClosestOne" Caption="Тип проверки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReverseCheck" Tooltip="При проверке поменять местами входные значения &amp;quot;Текст&amp;quot; и &amp;quot;Подстрока&amp;quot;" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Обратная проверка" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="UseWildcard" Tooltip="Если включено, то будет использоваться проверка с использованием метасимволов (Wildcard). Например: &amp;quot;test*&amp;quot;, &amp;quot;te?t&amp;quot;. Если свойство выключено, то проверка будет проводится простым способом и происходить быстрее" CatalogName="Main properties" Type="Bool" Value="True" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Расширенная проверка" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="CaseSensitive" Tooltip="Если свойство включено, то при проверке будет учитываться регистр символов, иначе он будет игнорироваться" CatalogName="Main properties" Type="Bool" Value="False" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Учитывать регистр" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="FindIndex" Tooltip="[Число] Возвращает индекс с отсчетом от нуля первого вхождения значения указанной строки" CatalogName="Output" Type="Variable" Value="$FoundIndex" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Number" EnumVariants="" Caption="Индекс строки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="FindString" Tooltip="[Текст] Возвращается значение найденной подстроки" CatalogName="Output" Type="Variable" Value="$FoundString" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="Text" EnumVariants="" Caption="Найденная строка" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorLevel" Tooltip="Выбор уровня обработки ошибок. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Ignore&amp;quot; - ошибки игнорируются; &amp;quot;Handle&amp;quot; - ошибки обрабатываются. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Ignore;Handle" Caption="Уровень обработки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorDirection" Tooltip="Выбор направления выхода из блока при возникновении ошибки. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Right&amp;quot; - направо; &amp;quot;Bottom&amp;quot; - вниз. Данное свойство позволяет определить направление выхода при возникновении ошибок для блоков не содержащих коннектора &amp;quot;Если ошибка&amp;quot; (например блок &amp;quot;Условие&amp;quot;). Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Default" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Right;Bottom" Caption="Направление выхода" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ReportLevel" Tooltip="Выбор уровня сообщений, которые будут выводить блоки при работе. Возможные значения: &amp;quot;Default&amp;quot; - по умолчанию; &amp;quot;Release&amp;quot; - вывод отключен; &amp;quot;Debug&amp;quot; - вывод основной информации; &amp;quot;Detailed&amp;quot; - вывод подробной информации. Если выбрано значение &amp;quot;Default&amp;quot;, то будет использоваться значение блока &amp;quot;Старт&amp;quot; данной диаграммы" CatalogName="Error processing" Type="Enum" Value="Output" Visible="True" DefaultValue="" ValueType="" EnumVariants="Default;Release;Debug;Detailed;Output" Caption="Уровень сообщений" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;Property Name="ErrorMessage" Tooltip="[Текст] Возвращает подробную информацию об ошибке в случае некорректного выполнения работы блока" CatalogName="Error processing" Type="Variable" Value="$ErrorMessage" Visible="True" DefaultValue="&amp;quot;&amp;quot;" ValueType="" EnumVariants="" Caption="Текст ошибки" ProtoName="" ReadOnly="False" IsRequired="False" IsPSVerified="True" /&gt;&lt;/PropertiesCollection&gt;&lt;/ToolboxItemSettings.Properties&gt;&lt;ToolboxItemSettings.ConnectorsSettings&gt;&lt;ConnectorsSettingsCollection Capacity="4"&gt;&lt;ConnectorSettings Name="Input" Orientation="Top" RelativePosition="0.5,0" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="No" Orientation="Right" RelativePosition="1,0.5" MaxInConnections="0" MaxOutConnections="1" Color="#FFFF0000" Caption="Нет" /&gt;&lt;ConnectorSettings Name="InputLeft" Orientation="Left" RelativePosition="0,0.5" MaxInConnections="100" MaxOutConnections="0" Color="#FF000000" Caption="" /&gt;&lt;ConnectorSettings Name="Yes" Orientation="Bottom" RelativePosition="0.5,1" MaxInConnections="0" MaxOutConnections="1" Color="#FF008000" Caption="Да" /&gt;&lt;/ConnectorsSettingsCollection&gt;&lt;/ToolboxItemSettings.ConnectorsSettings&gt;&lt;/ToolboxItemSettings&gt;</Content>
     </DesignerItem>
     <DesignerItem>
       <Left>1315</Left>
@@ -502,7 +502,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>a8c0ad2b-1eec-48d0-ba1c-6f4e4f5bcbc5</ID>
-      <zIndex>83</zIndex>
+      <zIndex>98</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -517,7 +517,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>6375f2e1-8529-447b-a036-cc0397081fe7</ID>
-      <zIndex>73</zIndex>
+      <zIndex>79</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -547,7 +547,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>ccfd8345-4e43-4447-bdf7-912408097f26</ID>
-      <zIndex>97</zIndex>
+      <zIndex>86</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -562,7 +562,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>31206956-f463-4e88-bf25-c0d6221ffd97</ID>
-      <zIndex>86</zIndex>
+      <zIndex>100</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -577,7 +577,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>89f1ab40-c290-4173-bf17-4ea64476facb</ID>
-      <zIndex>94</zIndex>
+      <zIndex>88</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -637,7 +637,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>af0532f1-e69b-4df5-80ac-3b91c7a225f9</ID>
-      <zIndex>101</zIndex>
+      <zIndex>81</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -652,7 +652,7 @@
       <Width>150</Width>
       <Height>100</Height>
       <ID>c314ed5e-38e9-4e5c-a040-ccea49dd8488</ID>
-      <zIndex>87</zIndex>
+      <zIndex>78</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -742,7 +742,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>7ed8dc27-36ee-47d7-b3d6-e4df1c6dbcd8</ID>
-      <zIndex>102</zIndex>
+      <zIndex>91</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -757,7 +757,7 @@
       <Width>100</Width>
       <Height>100</Height>
       <ID>5e51a2c2-0b93-49d3-ad05-a52ecc6c7c5e</ID>
-      <zIndex>104</zIndex>
+      <zIndex>103</zIndex>
       <IsGroup>false</IsGroup>
       <IsEnabled>true</IsEnabled>
       <Description></Description>
@@ -829,7 +829,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>78</zIndex>
+      <zIndex>74</zIndex>
     </Connection>
     <Connection>
       <SourceID>04de2a54-ffc7-4a57-9c9a-77c3c31b6c7f</SourceID>
@@ -928,7 +928,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>80</zIndex>
+      <zIndex>76</zIndex>
     </Connection>
     <Connection>
       <SourceID>228e6d10-4114-4a22-8e00-9f36f3cb93b2</SourceID>
@@ -1009,7 +1009,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>72</zIndex>
+      <zIndex>84</zIndex>
     </Connection>
     <Connection>
       <SourceID>72eca828-de90-4fb1-8d62-cd4e356cca1c</SourceID>
@@ -1018,7 +1018,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>92</zIndex>
+      <zIndex>97</zIndex>
     </Connection>
     <Connection>
       <SourceID>6375f2e1-8529-447b-a036-cc0397081fe7</SourceID>
@@ -1036,7 +1036,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>100</zIndex>
+      <zIndex>95</zIndex>
     </Connection>
     <Connection>
       <SourceID>a8c0ad2b-1eec-48d0-ba1c-6f4e4f5bcbc5</SourceID>
@@ -1045,7 +1045,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>74</zIndex>
+      <zIndex>80</zIndex>
     </Connection>
     <Connection>
       <SourceID>31206956-f463-4e88-bf25-c0d6221ffd97</SourceID>
@@ -1054,7 +1054,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>88</zIndex>
+      <zIndex>87</zIndex>
     </Connection>
     <Connection>
       <SourceID>89f1ab40-c290-4173-bf17-4ea64476facb</SourceID>
@@ -1063,7 +1063,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>93</zIndex>
+      <zIndex>90</zIndex>
     </Connection>
     <Connection>
       <SourceID>ccfd8345-4e43-4447-bdf7-912408097f26</SourceID>
@@ -1072,7 +1072,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>96</zIndex>
+      <zIndex>85</zIndex>
     </Connection>
     <Connection>
       <SourceID>fbe8cc06-7855-4f44-bbf9-debec3e8d607</SourceID>
@@ -1099,7 +1099,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>75</zIndex>
+      <zIndex>82</zIndex>
     </Connection>
     <Connection>
       <SourceID>0fe0cbb6-f0cc-4d9a-a1cb-a388ed7951c1</SourceID>
@@ -1108,7 +1108,7 @@
       <SinkConnectorName>InputLeft</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>84</zIndex>
+      <zIndex>99</zIndex>
     </Connection>
     <Connection>
       <SourceID>af0532f1-e69b-4df5-80ac-3b91c7a225f9</SourceID>
@@ -1117,7 +1117,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>99</zIndex>
+      <zIndex>83</zIndex>
     </Connection>
     <Connection>
       <SourceID>c314ed5e-38e9-4e5c-a040-ccea49dd8488</SourceID>
@@ -1126,7 +1126,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>76</zIndex>
+      <zIndex>72</zIndex>
     </Connection>
     <Connection>
       <SourceID>42f92d7f-dea3-42b4-ac88-8ff36d14e17f</SourceID>
@@ -1225,7 +1225,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>103</zIndex>
+      <zIndex>104</zIndex>
     </Connection>
     <Connection>
       <SourceID>0fe0cbb6-f0cc-4d9a-a1cb-a388ed7951c1</SourceID>
@@ -1234,7 +1234,7 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>None</SinkArrowSymbol>
-      <zIndex>82</zIndex>
+      <zIndex>101</zIndex>
     </Connection>
     <Connection>
       <SourceID>31206956-f463-4e88-bf25-c0d6221ffd97</SourceID>
@@ -1252,7 +1252,7 @@
       <SinkConnectorName>InOut</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>90</zIndex>
+      <zIndex>94</zIndex>
     </Connection>
     <Connection>
       <SourceID>5e51a2c2-0b93-49d3-ad05-a52ecc6c7c5e</SourceID>
@@ -1261,13 +1261,14 @@
       <SinkConnectorName>Input</SinkConnectorName>
       <SourceArrowSymbol>None</SourceArrowSymbol>
       <SinkArrowSymbol>Arrow</SinkArrowSymbol>
-      <zIndex>105</zIndex>
+      <zIndex>92</zIndex>
     </Connection>
   </Connections>
   <Properties>
     <DiagramProperty Name="page_number_start" Type="Number" IsGlobal="False" DefaultValue="0" Value="3" />
     <DiagramProperty Name="page_number_end" Type="Number" IsGlobal="False" DefaultValue="0" Value="4" />
-    <DiagramProperty Name="check" Type="Logical" IsGlobal="False" DefaultValue="False" Value="True" />
-    <DiagramProperty Name="sf" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAEhDOlxwcm9qZWN0XHBvc2h1a19kZW1vXHBvc2h1a19kZW1vXHJlc3VsdFwwN18wMl8yMDI0IDE5XzM1XHNiaXNfZmlsZS5wZGYL" />
+    <DiagramProperty Name="check" Type="Logical" IsGlobal="False" DefaultValue="False" Value="False" />
+    <DiagramProperty Name="sf" Type="Text" IsGlobal="False" DefaultValue="AAEAAAD/////AQAAAAAAAAAGAQAAAAIiIgs=" Value="AAEAAAD/////AQAAAAAAAAAGAQAAAEhDOlxwcm9qZWN0XHBvc2h1a19kZW1vXHBvc2h1a19kZW1vXHJlc3VsdFwwN18wMl8yMDI0IDE5XzQzXHNiaXNfZmlsZS5wZGYL" />
+    <DiagramProperty Name="name_f_index" Type="Number" IsGlobal="False" DefaultValue="0" Value="0" />
   </Properties>
 </Root>
