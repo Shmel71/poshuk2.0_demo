@@ -29,6 +29,12 @@
       "Folders": [],
       "Files": [
         {
+          "RelativePath": "1C.process",
+          "Main": false,
+          "Showing": true,
+          "Pinned": false
+        },
+        {
           "RelativePath": "diadok.process",
           "Main": false,
           "Showing": true,
@@ -36,12 +42,18 @@
         },
         {
           "RelativePath": "local.process",
-          "Main": true,
+          "Main": false,
           "Showing": true,
           "Pinned": false
         },
         {
           "RelativePath": "main.process",
+          "Main": true,
+          "Showing": true,
+          "Pinned": false
+        },
+        {
+          "RelativePath": "sbis.process",
           "Main": false,
           "Showing": true,
           "Pinned": false

@@ -30,7 +30,7 @@
       "Files": [
         {
           "RelativePath": "1C.process",
-          "Main": true,
+          "Main": false,
           "Showing": true,
           "Pinned": false
         },
@@ -42,7 +42,7 @@
         },
         {
           "RelativePath": "local.process",
-          "Main": false,
+          "Main": true,
           "Showing": true,
           "Pinned": false
         },
